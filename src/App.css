@@ -1,3 +1,23 @@
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  background: red;
+  margin: auto;
+  max-width: 1100px;
+}
+div{            
+  height: 80vh;
+  width: 100%;
+}
+
+#_1{background: antiquewhite;}
+#_2{background: rgb(27, 255, 129);}
+#_3{background: rgb(0, 0, 0);}
+#_4{background: rgb(55, 0, 255);}
+#_5{background: antiquewhite;}
+
 .App {
   text-align: center;
 }
