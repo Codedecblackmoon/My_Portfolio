@@ -12,11 +12,18 @@ div{
   width: 100%;
 }
 
-/* #_1{background: antiquewhite;}
+img{
+  height: 35%;
+}
+
+#_1{
+  background: antiquewhite;
+  border-bottom-left-radius: 20px;
+}
 #_2{background: antiquewhite;}
 #_3{background: antiquewhite;}
 #_4{background: antiquewhite;}
-#_5{background: antiquewhite;} */
+#_5{background: antiquewhite;}
 
 .App {
   text-align: center;

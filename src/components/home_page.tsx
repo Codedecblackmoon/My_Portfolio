@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../logo.svg';
+import logo from '../assets/PP2.png';
 
 // Rename the component to HomePage
 const HomePage: React.FC = () => {
