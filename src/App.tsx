@@ -16,10 +16,12 @@ function App() {
       </nav>
 
       <div id="_1"><HomePage /></div>
-      <div id="_2">2</div>
-      <div id="_3"></div>
-      <div id="_4"></div>
-      <div id="_5"></div>
+      <div id="_2">page 2</div>
+      <div id="_3">page 3</div>
+      <div id="_4">page 4</div>
+      <div id="_5">page 5</div>
+
+      <footer><p>footer</p></footer>
     </div>
   );
 }

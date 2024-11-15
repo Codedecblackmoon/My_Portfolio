@@ -1,10 +1,13 @@
 import React from 'react';
+import logo from '../logo.svg';
 
 // Rename the component to HomePage
 const HomePage: React.FC = () => {
   return (
     <div>
-      <h1>Hi World</h1>
+        <img src={logo} alt="" />
+      <p>“There are three responses to a piece of design – yes, no, and WOW! Wow is the one to aim for"</p>
+      <h2>― Milton Glaser.</h2>
     </div>
   );
 };
