@@ -3,7 +3,7 @@ html{
 }
 
 body{
-  background: rgb(59, 59, 59);
+  background: #121212;
   margin: auto;
   max-width: 1100px;
 }
@@ -17,14 +17,74 @@ img{
 }
 
 #_1{
-  background: antiquewhite;
-  border-bottom-left-radius: 20px;
+  background: #1b1b24;
+  margin-top: 20px;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
 }
 #_2{background: antiquewhite;}
 #_3{background: antiquewhite;}
 #_4{background: antiquewhite;}
 #_5{background: antiquewhite;}
 
+
+.navbar {
+  margin-top: 25px;
+  position: fixed; /* Keeps the navbar fixed */
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%); /* Centers the navbar horizontally */
+  background-color: #333;
+  padding: 10px 20px; /* Added horizontal padding for spacing */
+  z-index: 100; /* Ensures it stays above other elements */
+  display: flex;
+  gap: 10px;
+  border-radius: 40px;
+  align-items: center; /* Centers items vertically */
+}
+
+/* Navbar Styling */
+/* .navbar {
+  margin-top: 20px;
+
+  position: fixed; /* Makes the navbar fixed */
+  /* top: 0; */
+  /* Sticks it to the top of the page */
+  /* width: 80%;  */
+  /* background-color: #333; */
+  /* padding: 10px; */
+  /* z-index: 100; Ensures it stays above other elements */
+  /* display: flex;  */
+  
+  /* padding-left: 40px; */
+  /* gap:10px; */
+  /* border-radius: 40px; */
+/* } */ 
+
+.navbar a {
+  color: rgb(104, 104, 104);
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* Add padding to the top of your content so it isn't hidden behind the navbar */
+#_1, #_2, #_3, #_4, #_5 {
+  padding-top: 80px; /* Adjust based on navbar height */
+}
+
+/* Footer Styling */
+footer {
+  background-color: #222;
+  color: white;
+  padding: 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
 .App {
   text-align: center;
 }

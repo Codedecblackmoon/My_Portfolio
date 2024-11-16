@@ -7,12 +7,12 @@ function App() {
   return (
     <div className="App">
       
-      <nav>
-        <a href="#_1">home</a>
+      <nav className="navbar">
+        <a href="#_1">Home</a>
         <a href="#_2">about</a>
-        <a href="#_3">3</a>
-        <a href="#_4">4</a>
-        <a href="#_5">5</a>
+        <a href="#_3">Expirenc</a>
+        <a href="#_4">Projects</a>
+        <a href="#_5">Content</a>
       </nav>
 
       <div id="_1"><HomePage /></div>
