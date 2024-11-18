@@ -6,6 +6,7 @@ body{
   background: #121212;
   margin: auto;
   max-width: 1100px;
+  color: aliceblue;
 }
 div{            
   height: 100vh;
@@ -43,26 +44,13 @@ img{
   align-items: center; /* Centers items vertically */
 }
 
-/* Navbar Styling */
-/* .navbar {
-  margin-top: 20px;
-
-  position: fixed; /* Makes the navbar fixed */
-  /* top: 0; */
-  /* Sticks it to the top of the page */
-  /* width: 80%;  */
-  /* background-color: #333; */
-  /* padding: 10px; */
-  /* z-index: 100; Ensures it stays above other elements */
-  /* display: flex;  */
-  
-  /* padding-left: 40px; */
-  /* gap:10px; */
-  /* border-radius: 40px; */
-/* } */ 
+.home_page{
+  display: flex;
+  flex-direction: row-reverse;
+}
 
 .navbar a {
-  color: rgb(104, 104, 104);
+  color: aliceblue;
   text-decoration: none;
   font-size: 15px;
 }
