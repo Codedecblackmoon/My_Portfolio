@@ -15,7 +15,7 @@ div{
 
   
 #_1{
-    background: #1b1b24;
+    /* background: #1b1b24; */
     margin-top: 20px;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
@@ -40,19 +40,80 @@ div{
     border-radius: 40px;
     align-items: center; /* Centers items vertically */
 }
-  
-.home_page{
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: center;
-    margin: 20px;
-}
 
-.home_page img{
-  height: 350px;
-}
+   .home_page {
+    display: flex;
+    justify-content: center; /* Centers the content horizontally */
+    align-items: center; /* Centers the content vertically */
+    height: 100vh; /* Takes full viewport height */
+    background-color: #f5f5f5; 
+    padding: 20px;
+  }
   
+  .home_page > div {
+    flex: 1; /* Image container takes equal space */
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+  }
+  
+  .home_page img {
+    max-width: 100%; /* Ensure image scales responsively */
+    height: auto;
+    max-height: 300px; /* Restrict maximum height */
+    border-radius: 10px; /* Optional: rounded corners */
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+  }
+  
+  .home_page section {
+    flex: 1; /* Quote container takes equal space */
+    padding: 20px;
+    text-align: left; /* Align text to the left */
+    display: flex;
+    flex-direction: column; /* Stack quote and button vertically */
+    justify-content: center; /* Vertically center content */
+  }
+  
+  .home_page .name {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .home_page h3 {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+  
+  .home_page h3 style {
+    color: orange;
+  }
+  
+  .home_page h4 {
+    font-size: 1rem;
+    color: #888;
+    margin-bottom: 20px;
+  }
+  
+  .home_page button {
+    padding: 10px 20px;
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    align-self: flex-start; /* Align button to the start of the section */
+    transition: background-color 0.3s ease;
+  }
+  
+  .home_page button:hover {
+    background-color: #e69500;
+  }
+  
+
 .navbar a {
     color: aliceblue;
     text-decoration: none;
