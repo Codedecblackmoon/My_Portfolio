@@ -1,11 +1,15 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import HomePage from './components/home_page';
+import Home from './components/Home'
+import About from './components/About'
+import Projects from './components/Projects'
+import Contect from './components/Contect'
+// import AXA from './components/I_dont_know_yet'
+
 
 function App() {
+  
   return (
-    <div className="App">
+    <>
+     <div className="App">
       
       <nav className="navbar">
         <a href="#_1">Home</a>
@@ -15,15 +19,16 @@ function App() {
         <a href="#_5">Content</a>
       </nav>
 
-      <div id="_1"><HomePage /></div>
-      <div id="_2">page 2</div>
-      <div id="_3">page 3</div>
-      <div id="_4">page 4</div>
+      <div id="_1"><Home /></div>
+      <div id="_2"><About/></div>
+      <div id="_3"><Contect/></div>
+      <div id="_4"><Projects/></div>
       <div id="_5">page 5</div>
 
       <footer><p>footer</p></footer>
     </div>
-  );
+    </>
+  )
 }
 
-export default App;
+export default App
