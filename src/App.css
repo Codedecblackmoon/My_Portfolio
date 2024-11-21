@@ -96,6 +96,71 @@ div{
     color: #888;
     margin-bottom: 20px;
   }
+
+  /* Expe_page Styles */
+.Expe_page {
+  display: flex; /* Arrange the image and the grid horizontally */
+  gap: 20px; /* Add spacing between the image and the grid */
+  padding: 20px;
+}
+
+/* Image Styling */
+.Expe_page > div > img {
+  width: 30%; /* Make the image take 30% of the width */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensure the image fits neatly */
+  border-radius: 10px; /* Optional: rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Optional: subtle shadow */
+}
+
+/* Card Grid Styling */
+.Expe_page section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns for the first row */
+  grid-auto-rows: auto; /* Adjust row height automatically */
+  gap: 10px; /* Space between cards */
+  width: 60%; /* Section takes 60% of the page width */
+}
+
+/* Specify item placements to create 4 cards in the first row and 3 in the second */
+.Expe_page section > .card:nth-child(5),
+.Expe_page section > .card:nth-child(6),
+.Expe_page section > .card:nth-child(7) {
+  grid-column: span 4; /* Start the 3 cards in the second row */
+  justify-self: stretch; /* Stretch to fit the grid column */
+}
+
+/* Card Styling */
+.card {
+  border: 1px solid #ccc; /* Border for each card */
+  border-radius: 8px; /* Optional: rounded corners */
+  padding: 10px; /* Space inside the card */
+  text-align: center; /* Center-align text and images */
+  background-color: #fff; /* Background color */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Add hover effect */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Slightly enlarge the card on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+/* Card Image */
+.card img {
+  width: 100%; /* Make the image fit the card width */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 10px; /* Space between image and text */
+  border-radius: 4px; /* Optional: rounded corners for images */
+}
+
+/* Card Text */
+.card h4 {
+  font-size: 14px; /* Adjust font size */
+  color: #333;
+  margin: 0; /* Remove default margin */
+}
+
   
   .home_page button {
     padding: 10px 20px;
