@@ -21,9 +21,9 @@ function App() {
 
       <div id="_1"><Home /></div>
       <div id="_2"><About/></div>
-      <div id="_3"><Contect/></div>
+      <div id="_3"><AXA></AXA></div>
       <div id="_4"><Projects/></div>
-      <div id="_5"><AXA></AXA></div>
+      <div id="_5"><Contect/></div>
 
       <footer><p>footer</p></footer>
     </div>
