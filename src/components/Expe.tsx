@@ -6,6 +6,8 @@ import git from "../assets/github.png";
 import jav from "../assets/java.png";
 import rea from "../assets/react.png";
 import pyth from "../assets/python.png";
+import doc from "../assets/docker.png";
+
 
 function Expe() {
   return (
@@ -13,7 +15,6 @@ function Expe() {
       <div>
         <img src={ex} alt="" />
       </div>
-
       <section>
         <div className="card">
           <img src={pyth} alt="" />
@@ -22,6 +23,10 @@ function Expe() {
         <div className="card">
           <img src={rea} alt="" />
           <h4>React</h4>
+        </div>
+        <div className="card">
+          <img src={doc} alt="" />
+          <h4>Docker</h4>
         </div>
         <div className="card">
           <img src={jav} alt="" />

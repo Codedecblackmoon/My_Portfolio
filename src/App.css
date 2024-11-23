@@ -8,23 +8,86 @@ body{
     max-width: 1100px;
     color: rgb(53, 53, 53);
 }
-div{            
+/* div{            
     height: 100vh;
     width: 100%;
-  } 
+}  */
+.Projects_page #stend{
+  height: 100px;
+}
+.project_grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns of equal width */
+  gap: 10px; /* Optional: Adds space between items */
+  padding: 10px; /* Optional: Adds padding around the grid  project_grid */
+  width: 40%;
+  height: 40%;
+  /* height: 100vh; */
+}
 
+.Projects_page {
+  display: flex;
+  justify-content: center; /* Centers the content horizontally */
+  align-items: center; /* Centers the content vertically */
+  height: 100vh; /* Takes full viewport height */
+  background-color: #f5f5f5; 
+  padding: 20px;
+}
+
+#project_card{
+  background-color: lightblue;
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+#project_card img{
+  max-width: 100%; /* Ensure image scales responsively */
+  height: auto;
+  max-height: 300px; /* Restrict maximum height */
+  border-radius: 10px; /* Optional: rounded corners */
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+}
+
+.Projects_page > div {
+  flex: 1; /* Image container takes equal space */
+  display: flex;
+  justify-content: center; /* Center the image horizontally */
+  align-items: center; /* Center the image vertically */
+}
   
 #_1{
-    /* background: #1b1b24; */
-    margin-top: 20px;
+    background: #f5f5f5;
+    /* margin-top: 20px;
     border-top-left-radius: 40px;
-    border-top-right-radius: 40px;
+    border-top-right-radius: 40px; */
 }
-  #_2{background: antiquewhite;}
-  #_3{background: antiquewhite;}
-  #_4{background: antiquewhite;}
-  #_5{background: antiquewhite;}
-  
+#_2{
+  background: #f5f5f5;
+  /* margin-top: 20px;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px; */
+}
+#_3{
+  background: #f5f5f5;
+  /* margin-top: 20px; */
+  /* border-top-left-radius: 40px;
+  border-top-right-radius: 40px; */
+}
+
+#_4{
+  background: #f5f5f5;
+  /* margin-top: 20px; */
+  /* border-top-left-radius: 40px;
+  border-top-right-radius: 40px; */
+}
+#_5{
+  background: #f5f5f5;
+  /* margin-top: 20px; */
+  /* border-top-left-radius: 40px;
+  border-top-right-radius: 40px; */
+}
   
 .navbar {
     margin-top: 25px;
@@ -74,28 +137,28 @@ div{
     justify-content: center; /* Vertically center content */
 }
   
-  .home_page .name {
-    font-size: 2.5rem;
-    color: #333;
-    margin-bottom: 10px;
-  }
-  
-  .home_page h3 {
-    font-size: 1.2rem;
-    color: #555;
-    line-height: 1.5;
-    margin-bottom: 10px;
-  }
-  
-  .home_page h3 style {
-    color: rgb(255, 128, 0);
-  }
-  
-  .home_page h4 {
-    font-size: 1rem;
-    color: #888;
-    margin-bottom: 20px;
-  }
+.home_page .name {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.home_page h3 {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.home_page h3 style {
+  color: rgb(255, 128, 0);
+}
+
+.home_page h4 {
+  font-size: 1rem;
+  color: #888;
+  margin-bottom: 20px;
+}
 
   /* Expe_page Styles */
 .Expe_page {
@@ -254,9 +317,11 @@ div{
 }
   
   /* Add padding to the top of your content so it isn't hidden behind the navbar */
-/* #_1, #_2, #_3, #_4, #_5 {
+#_1, #_2, #_3, #_4, #_5 {
     padding-top: 80px;
-} */
+    height: 100vh;
+    width: 100%;
+}
   
   /* Footer Styling */
 footer {
