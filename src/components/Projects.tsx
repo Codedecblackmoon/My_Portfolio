@@ -5,26 +5,26 @@ function Projects() {
     return (
         <div className="Projects_page">
           <div className="project_grid">
-            <div id="project_card">
+            <div className="project_card">
               <img src={pro} />
               <h3>Project 1</h3>
-              <div id="info">
+              <div className="info">
                 <button>Code</button>
                 <button>Demo</button>
               </div>
             </div>
-            <div id="project_card">
+            <div className="project_card">
               <img src={pro} />
               <h3>Project 2</h3>
-              <div id="info">
+              <div className="info">
                 <button>Code</button>
                 <button>Demo</button>
               </div>
             </div>
-            <div id="project_card">
+            <div className="project_card">
               <img src={pro} />
               <h3>Project 3</h3>
-              <div id="info">
+              <div className="info">
                 <button>Code</button>
                 <button>Demo</button>
               </div>
