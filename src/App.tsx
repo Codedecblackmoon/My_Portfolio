@@ -1,7 +1,7 @@
 import Home from './components/Home'
 import About from './components/About'
 import Projects from './components/Projects'
-import Contect from './components/Contect'
+import Contect from './components/Contact'
 import AXA from './components/Expe'
 
 
