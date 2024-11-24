@@ -18,35 +18,35 @@ function Expe() {
       <section>
         <div className="card">
           <img src={pyth} alt="" />
-          <h4>Python</h4>
+          {/* <h4>Python</h4> */}
         </div>
         <div className="card">
           <img src={rea} alt="" />
-          <h4>React</h4>
+          {/* <h4>React</h4> */}
         </div>
         <div className="card">
           <img src={doc} alt="" />
-          <h4>Docker</h4>
+          {/* <h4>Docker</h4> */}
         </div>
         <div className="card">
           <img src={jav} alt="" />
-          <h4>Java</h4>
+          {/* <h4>Java</h4> */}
         </div>
         <div className="card">
           <img src={git} alt="" />
-          <h4>Github</h4>
+          {/* <h4>Github</h4> */}
         </div>
         <div className="card">
           <img src={js} alt="" />
-          <h4>JS</h4>
+          {/* <h4>JS</h4> */}
         </div>
         <div className='card'>
           <img src={css} alt="" />
-          <h4>CSS</h4>
+          {/* <h4>CSS</h4> */}
         </div>
         <div className='card'>
           <img src={html} alt="" />
-          <h4>HTML</h4>
+          {/* <h4>HTML</h4> */}
         </div>
       </section>
     </div>
