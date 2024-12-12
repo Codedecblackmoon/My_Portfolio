@@ -10,8 +10,8 @@ function Home() {
           <section>
             <h1 className="name">Hi, I'm Gideon Lenge</h1>
             <h3>
-              <style color="orange">“</style>There are three responses to a piece of design – yes, no, and WOW!
-              Wow is the one to aim for"
+            <span style={{ color: "orange", fontSize: "40px" }}>"</span>There are three responses to a piece of design – yes, no, and WOW!
+              Wow is the one to aim for<span style={{ color: "orange", fontSize: "40px" }}>"</span>
             </h3>
             <h4>― Milton Glaser.</h4>
             <button>Know me</button>
