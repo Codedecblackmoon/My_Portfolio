@@ -1,13 +1,16 @@
 import ex from "../assets/Expe.png";
-import html from "../assets/html.png";
-import css from "../assets/css.png";
-import js from "../assets/js.png";
-import git from "../assets/github.png";
-import jav from "../assets/java.png";
-import rea from "../assets/react.png";
-import pyth from "../assets/python.png";
-import doc from "../assets/docker.png";
-
+import html from "../assets/html_black.png";
+import css from "../assets/css_black.png";
+import js from "../assets/js_black.png";
+import git from "../assets/git_black.png";
+import jav from "../assets/java_black.png";
+import rea from "../assets/react_black.png";
+import pyth from "../assets/python_black.png";
+import doc from "../assets/docker_black.png";
+import flu from "../assets/lf.png"
+import sql from "../assets/laql.png"
+import sb from "../assets/lsb.png"
+import net from "../assets/ts_black.png"
 
 function Expe() {
   return (
@@ -18,35 +21,51 @@ function Expe() {
       <section>
         <div className="card">
           <img src={pyth} alt="" />
-          {/* <h4>Python</h4> */}
         </div>
         <div className="card">
           <img src={rea} alt="" />
-          {/* <h4>React</h4> */}
         </div>
         <div className="card">
           <img src={doc} alt="" />
-          {/* <h4>Docker</h4> */}
         </div>
         <div className="card">
           <img src={jav} alt="" />
-          {/* <h4>Java</h4> */}
         </div>
         <div className="card">
           <img src={git} alt="" />
-          {/* <h4>Github</h4> */}
         </div>
         <div className="card">
           <img src={js} alt="" />
-          {/* <h4>JS</h4> */}
         </div>
         <div className='card'>
           <img src={css} alt="" />
-          {/* <h4>CSS</h4> */}
         </div>
         <div className='card'>
           <img src={html} alt="" />
-          {/* <h4>HTML</h4> */}
+        </div>
+        <div className='card'>
+          <img src={net} alt="" />
+        </div>
+        <div className='card'>
+          <img src={flu} alt="" />
+        </div>
+        <div className='card'>
+          <img src={sql} alt="" /> 
+        </div>
+        <div className='card'>
+          <img src={sb} alt="" />
+        </div>
+        <div className="card">
+          <img src="" alt="" />
+        </div>
+        <div className="card">
+          <img src="" alt="" />
+        </div>
+        <div className="card">
+          <img src="" alt="" />
+        </div>
+        <div className="card">
+          <img src="" alt="" />
         </div>
       </section>
     </div>

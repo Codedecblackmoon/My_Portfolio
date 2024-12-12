@@ -160,22 +160,18 @@ body{
   /* Expe_page Styles */
 .Expe_page {
   display: flex; /* Arrange the image and the grid horizontally */
-  gap: 40px; /* Add spacing between the image and the grid */
+  gap: 40px;
   padding: 20px;
   background-color: #f5f5f5; 
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
+  margin-top: 110px ;
 }
 
 /* Image Styling */
 .Expe_page > div > img {
   height: 400px;
   margin: 10px;
-  /* width: 10%;  */
-  /* /* height: auto;  */
-  /* object-fit: cover; /
-  border-radius: 10px; 
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); */ 
 }
 
 /* Card Grid Styling */
@@ -190,14 +186,10 @@ body{
 }
 
 .card img{
-  /* width: 70px; */
-  /* height: 70px;  */
-  object-fit: cover; /* Ensures images are cropped proportionally */
-  display: block;
-  margin: 5px;
+  margin: 10px;
   width: 70%; 
   height: auto;
-  /* margin-bottom: 10px;  */
+  padding: 10px;
   border-radius: 4px;
 }
 
