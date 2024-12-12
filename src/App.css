@@ -196,8 +196,15 @@ body{
 .card{
   display: flex;
   align-items: center;
+  /* background-color: #ff8800; */
   justify-content: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  /* border-radius: 50px; */
+  border-radius: 5px;
+  /* border-radius: 0px; */
+  background: #e0e0e0;
+  box-shadow: inset 8px 8px 16px #bebebe,
+              inset -8px -8px 16px #ffffff;
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);  */
   transition: transform 0.2s ease, box-shadow 0.2s ease; 
 }
 
