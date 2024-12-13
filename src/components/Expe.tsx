@@ -21,7 +21,6 @@ function Expe() {
       <section>
         <div className="card">
           <img src={pyth} alt="" />
-          ghjkl
         </div>
         <div className="card">
           <img src={rea} alt="" />
