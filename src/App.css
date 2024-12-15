@@ -306,6 +306,99 @@ body{
     height: 100vh;
     width: 100%;
 }
+
+
+.content-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Section Title */
+#hire h1 {
+  font-size: 2rem;
+  color: #444;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Contact Form */
+.contact-form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+/* Input Fields */
+.contact-form .field {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #007bff;
+}
+
+.contact-form label {
+  position: absolute;
+  top: -8px;
+  left: 10px;
+  font-size: 0.9rem;
+  background-color: #fff;
+  padding: 0 5px;
+  color: #666;
+}
+
+/* Textarea */
+.contact-form textarea {
+  resize: none;
+}
+
+/* Button */
+.contact-form .button {
+  width: 100%;
+  padding: 10px 0;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form .button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  #hire h1 {
+    font-size: 1.5rem;
+  }
+
+  .contact-form {
+    padding: 15px;
+  }
+}
   
   /* Footer Styling */
 footer {
@@ -319,8 +412,4 @@ footer {
 .App {
     text-align: center;
 }
-  
- 
-  
-
   
