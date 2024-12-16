@@ -9,24 +9,36 @@ function Projects() {
               <img src={pro} />
               <h3>Project 1</h3>
               <div className="info">
-                <button>Code</button>
-                <button>Demo</button>
+                <button>
+                  <i className="fa-brands fa-github"></i>
+                </button>
+                <button>
+                  <i className="fa-solid fa-globe"></i>
+                </button>
               </div>
             </div>
             <div className="project_card">
               <img src={pro} />
               <h3>Project 2</h3>
               <div className="info">
-                <button>Code</button>
-                <button>Demo</button>
+                <button>
+                  <i className="fa-brands fa-github"></i>
+                </button>
+                <button>
+                  <i className="fa-solid fa-globe"></i>
+                </button>
               </div>
             </div>
             <div className="project_card">
               <img src={pro} />
               <h3>Project 3</h3>
               <div className="info">
-                <button>Code</button>
-                <button>Demo</button>
+                <button>
+                  <i className="fa-brands fa-github"></i>
+                </button>
+                <button>
+                  <i className="fa-solid fa-globe"></i>
+                </button>
               </div>
             </div>
           </div>
