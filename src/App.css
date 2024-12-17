@@ -64,7 +64,7 @@ body{
 }
 
 .info button{
-  padding: 15px 25px;
+  padding: 5px 15px;
   border: 0px;
   border-radius: 5px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -75,6 +75,40 @@ body{
   justify-content: center;
   align-items: center;
   gap: 20px;
+}
+
+.Projects_page {
+  position: relative;
+  max-width: 800px;
+  margin: auto;
+}
+
+.project_card {
+  display: none;
+}
+
+.project_card.active {
+  display: block;
+  animation: fade 1s;
+}
+
+.slideshow-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.prev, .next {
+  cursor: pointer;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: rgb(1, 126, 244);
+  text-decoration: none;
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  font-size: 30px;
+  border: none;
+  padding: 10px;
+  user-select: none;
 }
 
 
