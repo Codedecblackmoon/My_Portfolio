@@ -3,9 +3,6 @@ html, body{
     margin: auto;
     box-sizing: border-box;
     background: #d5d5d5;
-    /* margin: auto;
-    margin-bottom: 0px; */
-    /* height: 100vh; */
     max-width: 1100px;
     color: rgb(53, 53, 53);
     padding: 0;
@@ -16,9 +13,8 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Add spacing for sections if navbar overlaps */
 div[id^="_"] {
-  scroll-margin-top: 60px; /* Adjust based on navbar height */
+  scroll-margin-top: 60px;
 }
 
 div[id^="_"] {
@@ -28,13 +24,11 @@ div[id^="_"] {
   padding: 0;
 }
 
-
 .App {
   margin: 0;
   padding: 0;
 }
   
-
 .Projects_page #stend{
   height: 100px;
   margin: 50px;
@@ -47,7 +41,6 @@ div[id^="_"] {
   padding: 10px; 
   width: 50%;
   height: 40%;
- 
 }
 
 .Projects_page {
@@ -67,10 +60,8 @@ div[id^="_"] {
 .project_card{
   background-color:rgb(255, 145, 0);
   border-radius: 10px;
-  /* border: 1px solid #ccc; */
   padding: 20px;
   text-align: center;
-  /* font-size: 1.2em; */
   transition: transform 0.3s ease;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
 }
@@ -146,10 +137,7 @@ div[id^="_"] {
   background-position: center; /* Centers the image */
   background-repeat: no-repeat; /* Prevents the image from repeating */
   height: 100vh;
-  /* height: 100%; */
   width: 100%; 
-  /* display: block;
-  margin: 0px; */
 }
 
 #_2{
@@ -159,57 +147,59 @@ div[id^="_"] {
   background-repeat: no-repeat; /* Prevents the image from repeating */
   height: 100vh; /* Sets the container height to full viewport height */
   width: 100%; 
-  /* display: block;
-  margin: 0px; */
 }
+
 #_3{
   background:url('/images/Component_3.png');
   background-size: cover; /* Scales the image to cover the container */
   background-position: center; /* Centers the image */
   background-repeat: no-repeat; /* Prevents the image from repeating */
   height: 100vh;
-  /* height: 100%; */
   width: 100%; 
-  /* display: block;
-  margin: 0px; */
 }
+
 #_4{
   background:url('/images/Component_4.png');
   background-size: cover; /* Scales the image to cover the container */
   background-position: center; /* Centers the image */
   background-repeat: no-repeat; /* Prevents the image from repeating */
   height: 100vh;
-  /* height: 100%; */
   width: 100%; 
-  /* display: block;
-  margin: 0px; */
 }
+
 #_5{
   background:url('/images/Component_5.png');
   background-size: cover; /* Scales the image to cover the container */
   background-position: center; /* Centers the image */
   background-repeat: no-repeat; /* Prevents the image from repeating */
   height: 100vh;
-  /* height: 100%; */
   width: 100%; 
-  /* display: block;
-  margin: 0px; */
 }
 
-  
 .navbar {
     margin-top: 25px;
-    position: fixed; /* Keeps the navbar fixed */
+    position: fixed; 
     top: 0;
     left: 50%;
-    transform: translateX(-50%); /* Centers the navbar horizontally */
+    transform: translateX(-50%); 
     background-color: #333;
-    padding: 10px 20px; /* Added horizontal padding for spacing */
-    z-index: 100; /* Ensures it stays above other elements */
+    padding: 10px 20px;
+    z-index: 100;
     display: flex;
     gap: 15px;
     border-radius: 40px;
-    align-items: center; /* Centers items vertically */
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+.navbar a:hover {
+  color: #3498db;
+  text-decoration: none;
+}
+
+.navbar a:ACTIVE {
+  color: #3498db;
+  text-decoration: none;
 }
 
 .home_page {
@@ -355,9 +345,9 @@ div[id^="_"] {
 .About_page img {
   max-width: 100%; /* Ensure image scales responsively */
   height: auto;
-  max-height: 400px; /* Restrict maximum height */
+  max-height:600px; /* Restrict maximum height */
   border-radius: 10px; /* Optional: rounded corners */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
 }
 
 .About_page section {

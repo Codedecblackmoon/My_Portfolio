@@ -1,4 +1,4 @@
-import pic from '../assets/PP2.png'
+import pic from '../assets/newpic_2.png'
 
 function About() {
     return (
