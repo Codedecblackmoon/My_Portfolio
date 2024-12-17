@@ -352,7 +352,9 @@ div[id^="_"] {
 
 .About_page section {
   flex: 1; /* Text container takes equal space */
-  padding: 20px;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   text-align: left; /* Align text to the left */
   display: flex;
   flex-direction: column; /* Stack paragraph and button vertically */
