@@ -1,19 +1,44 @@
-html{
-    scroll-behavior: smooth;
-  }
-  
-body{
-    background: #121212;
+
+html, body{
     margin: auto;
+    box-sizing: border-box;
+    background: #d5d5d5;
+    /* margin: auto;
+    margin-bottom: 0px; */
+    /* height: 100vh; */
     max-width: 1100px;
     color: rgb(53, 53, 53);
+    padding: 0;
+    box-sizing: border-box;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Add spacing for sections if navbar overlaps */
+div[id^="_"] {
+  scroll-margin-top: 60px; /* Adjust based on navbar height */
+}
+
+div[id^="_"] {
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+.App {
+  margin: 0;
+  padding: 0;
+}
+  
 
 .Projects_page #stend{
   height: 100px;
   margin: 50px;
 }
-
 
 .project_grid{
   display: grid;
@@ -30,7 +55,7 @@ body{
   justify-content: center; 
   align-items: center; 
   height: 100vh; 
-  background-color: #f5f5f5; 
+  /* background-color: #f5f5f5;  */
   padding: 20px;
 }
 
@@ -78,9 +103,12 @@ body{
 }
 
 .Projects_page {
-  position: relative;
-  max-width: 800px;
-  margin: auto;
+  display: flex;
+  justify-content: center; /* Centers the content horizontally */
+  align-items: center; /* Centers the content vertically */
+  height: 100vh; 
+  /* background-color: #f5f5f5;  */
+  padding: 20px;
 }
 
 .project_card {
@@ -112,11 +140,61 @@ body{
 }
 
 
-#_1{background: #f5f5f5;}
-#_2{background: #f5f5f5;}
-#_3{background: #f5f5f5;}
-#_4{background: #f5f5f5;}
-#_5{background: #f5f5f5;}
+#_1{
+  background:url('/images/Component_1.png');
+  background-size: cover; /* Scales the image to cover the container */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  height: 100vh;
+  /* height: 100%; */
+  width: 100%; 
+  /* display: block;
+  margin: 0px; */
+}
+
+#_2{
+  background-image:url('/images/Component_2.png');
+  background-size: cover; /* Scales the image to cover the container */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  height: 100vh; /* Sets the container height to full viewport height */
+  width: 100%; 
+  /* display: block;
+  margin: 0px; */
+}
+#_3{
+  background:url('/images/Component_3.png');
+  background-size: cover; /* Scales the image to cover the container */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  height: 100vh;
+  /* height: 100%; */
+  width: 100%; 
+  /* display: block;
+  margin: 0px; */
+}
+#_4{
+  background:url('/images/Component_4.png');
+  background-size: cover; /* Scales the image to cover the container */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  height: 100vh;
+  /* height: 100%; */
+  width: 100%; 
+  /* display: block;
+  margin: 0px; */
+}
+#_5{
+  background:url('/images/Component_5.png');
+  background-size: cover; /* Scales the image to cover the container */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  height: 100vh;
+  /* height: 100%; */
+  width: 100%; 
+  /* display: block;
+  margin: 0px; */
+}
 
   
 .navbar {
@@ -129,7 +207,7 @@ body{
     padding: 10px 20px; /* Added horizontal padding for spacing */
     z-index: 100; /* Ensures it stays above other elements */
     display: flex;
-    gap: 10px;
+    gap: 15px;
     border-radius: 40px;
     align-items: center; /* Centers items vertically */
 }
@@ -138,8 +216,8 @@ body{
     display: flex;
     justify-content: center; /* Centers the content horizontally */
     align-items: center; /* Centers the content vertically */
-    height: 100vh; /* Takes full viewport height */
-    background-color: #f5f5f5; 
+    height: 100vh; 
+    /* background-color: #f5f5f5;  */
     padding: 20px;
 }
   
@@ -194,7 +272,7 @@ body{
   display: flex; /* Arrange the image and the grid horizontally */
   gap: 40px;
   padding: 20px;
-  background-color: #f5f5f5; 
+  /* background-color: #f5f5f5;  */
   /* align-items: center; */
   justify-content: center;
   margin-top: 110px ;
@@ -232,17 +310,15 @@ body{
   justify-content: center;
   /* border-radius: 50px; */
   border-radius: 5px;
-  /* border-radius: 0px; */
-  background: #e0e0e0;
-  box-shadow: inset 8px 8px 16px #bebebe,
-              inset -8px -8px 16px #ffffff;
-  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);  */
+  border: #cf8600 1px solid;
+
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
   transition: transform 0.2s ease, box-shadow 0.2s ease; 
 }
 
 .card:hover {
   transform: scale(1.05); 
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
  } 
 
 
@@ -264,7 +340,7 @@ body{
   justify-content: center; /* Centers the content horizontally */
   align-items: center; /* Centers the content vertically */
   height: 100vh; /* Takes full viewport height */
-  background-color: #f9f9f9; /* Light background for contrast */
+  /* background-color: #f9f9f9;  */
   padding: 20px;
   gap: 20px; /* Adds space between the sections */
 }
@@ -341,12 +417,18 @@ body{
 
 
 .content-page {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  padding: 20px;
+  padding: 20px; */
+  display: flex;
+    justify-content: center; /* Centers the content horizontally */
+    align-items: center; /* Centers the content vertically */
+    height: 100vh; 
+    /* background-color: #f5f5f5;  */
+    padding: 20px;
 }
 
 /* Section Title */
