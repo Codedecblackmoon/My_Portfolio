@@ -14,7 +14,10 @@ function Home() {
               Wow is the one to aim for<span style={{ color: "#008cff", fontSize: "20px", fontStyle: "bold" }}>"</span>
             </h3>
             <h4>― Milton Glaser ―</h4>
-            <button>Know me</button>
+            <a href="#_5">
+              <button>Contact me</button>
+            </a>
+            
           </section>
         </div>
       );

@@ -77,10 +77,14 @@ function Projects() {
         </a>
       </div>
 
-      <div id="stend">
+      <div id='stend'>
         <img src={stn} alt="SVG-style side image" />
       </div>
+      
+
     </div>
+
+    
   );
 }
 

@@ -1,5 +1,6 @@
 import pic from '../assets/newpic_2.png'
 import cv from '../assets/Gideon_Lenge_CV.pdf'
+import '../styles/style.css'
 
 function About() {
     return (

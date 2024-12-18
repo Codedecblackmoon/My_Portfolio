@@ -13,7 +13,29 @@ html {
   scroll-behavior: smooth;
 }
 
-div[id^="_"] {
+.navbar {
+  margin-top: 25px;
+  position: fixed; 
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%); 
+  background-color: #333;
+  padding: 10px 20px;
+  z-index: 100;
+  display: flex;
+  gap: 15px;
+  border-radius: 40px;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+.navbar a {
+  color: aliceblue;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+/* div[id^="_"] {
   scroll-margin-top: 60px;
 }
 
@@ -22,115 +44,13 @@ div[id^="_"] {
   width: 100%;
   margin: 0;
   padding: 0;
-}
+} */
 
 .App {
   margin: 0;
   padding: 0;
 }
   
-.Projects_page #stend{
-  height: 100px;
-  margin: 50px;
-}
-
-.project_grid{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-  padding: 10px; 
-  width: 50%;
-  height: 40%;
-}
-
-.Projects_page {
-  display: flex;
-  justify-content: center; 
-  align-items: center; 
-  height: 100vh; 
-  /* background-color: #f5f5f5;  */
-  padding: 20px;
-}
-
-.project_card h3{
-  font-size: 15px;
-  margin: 20px;
-}
-
-.project_card{
-  background-color:rgb(255, 145, 0);
-  border-radius: 10px;
-  padding: 20px;
-  text-align: center;
-  transition: transform 0.3s ease;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
-}
-
-.project_card img{
-  max-width: 100%;
-  height: auto;
-  max-height: 300px;
-  border-radius: 10px;
-}
-
-.info{
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-}
-
-.info button{
-  padding: 5px 15px;
-  border: 0px;
-  border-radius: 5px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.Projects_page > div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-}
-
-.Projects_page {
-  display: flex;
-  justify-content: center; /* Centers the content horizontally */
-  align-items: center; /* Centers the content vertically */
-  height: 100vh; 
-  /* background-color: #f5f5f5;  */
-  padding: 20px;
-}
-
-.project_card {
-  display: none;
-}
-
-.project_card.active {
-  display: block;
-  animation: fade 1s;
-}
-
-.slideshow-container {
-  position: relative;
-  overflow: hidden;
-}
-
-.prev, .next {
-  cursor: pointer;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 18px;
-  color: rgb(1, 126, 244);
-  text-decoration: none;
-  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  font-size: 30px;
-  border: none;
-  padding: 10px;
-  user-select: none;
-}
-
-
 #_1{
   background:url('/images/Component_1.png');
   background-size: cover; /* Scales the image to cover the container */
@@ -176,327 +96,60 @@ div[id^="_"] {
   width: 100%; 
 }
 
-.navbar {
-    margin-top: 25px;
-    position: fixed; 
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%); 
-    background-color: #333;
-    padding: 10px 20px;
-    z-index: 100;
-    display: flex;
-    gap: 15px;
-    border-radius: 40px;
-    align-items: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
-}
-
-.navbar a:hover {
-  color: #3498db;
-  text-decoration: none;
-}
-
-.navbar a:ACTIVE {
-  color: #3498db;
-  text-decoration: none;
-}
-
 .home_page {
-    display: flex;
-    justify-content: center; /* Centers the content horizontally */
-    align-items: center; /* Centers the content vertically */
-    height: 100vh; 
-    /* background-color: #f5f5f5;  */
-    padding: 20px;
-}
-  
-.home_page > div {
-    flex: 1; /* Image container takes equal space */
-    display: flex;
-    justify-content: center; /* Center the image horizontally */
-    align-items: center; /* Center the image vertically */
-}
-  
-.home_page img {
-    max-width: 100%; /* Ensure image scales responsively */
-    height: auto;
-    max-height: 300px; /* Restrict maximum height */
-    border-radius: 10px; /* Optional: rounded corners */
-}
-  
-.home_page section {
-    flex: 1; /* Quote container takes equal space */
-    padding: 20px;
-    text-align: left; /* Align text to the left */
-    display: flex;
-    flex-direction: column; /* Stack quote and button vertically */
-    justify-content: center; /* Vertically center content */
-}
-  
-.home_page .name {
-  font-size: 2.5rem;
-  color: #333;
-  margin-bottom: 10px;
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+  padding: 20px;
 }
 
-.home_page h3 {
-  font-size: 1.2rem;
-  color: #555;
-  line-height: 1.5;
-  margin-bottom: 10px;
+.Projects_page {
+  margin: 0px;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  height: 100vh; 
+  padding: 20px;
 }
-
-.home_page h3 style {
-  color: rgb(255, 128, 0);
-}
-
-.home_page h4 {
-  font-size: 1rem;
-  color: #888;
-  margin-bottom: 20px;
-}
-
-  /* Expe_page Styles */
+  
 .Expe_page {
+  margin: 0px;
   display: flex; /* Arrange the image and the grid horizontally */
   gap: 40px;
   padding: 20px;
+  padding-top: 150px;
   /* background-color: #f5f5f5;  */
   /* align-items: center; */
   justify-content: center;
-  margin-top: 110px ;
-}
-
-/* Image Styling */
-.Expe_page > div > img {
-  height: 400px;
-  margin: 10px;
-}
-
-/* Card Grid Styling */
-.Expe_page section {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 columns for the first row */
-  /* grid-auto-rows: auto; */
-  gap: 10px; /* Space between cards */
-  width: 400px; /* Section takes 60% of the page width */
-  margin: 20px;
-  height: 100px;
-}
-
-.card img{
-  margin: 10px;
-  width: 70%; 
-  height: auto;
-  padding: 10px;
-  border-radius: 4px;
-}
-
-.card{
-  display: flex;
-  align-items: center;
-  /* background-color: #ff8800; */
-  justify-content: center;
-  /* border-radius: 50px; */
-  border-radius: 5px;
-  border: #cf8600 1px solid;
-
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
-  transition: transform 0.2s ease, box-shadow 0.2s ease; 
-}
-
-.card:hover {
-  transform: scale(1.05); 
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
- } 
-
-
-.home_page button {
-  padding: 10px 20px;
-  /* background-color: rgb(255, 128, 0); */
-  border: 1px solid rgb(255, 128, 0);
-  color: rgb(111, 93, 75);
-  /* border: none; */
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 1rem;
-  align-self: flex-start; /* Align button to the start of the section */
-  transition: background-color 0.3s ease;
+  height: 100vh;
+  /* margin-top: 0px ; */
 }
 
 .About_page {
+  margin: 0px;
   display: flex;
   justify-content: center; /* Centers the content horizontally */
   align-items: center; /* Centers the content vertically */
   height: 100vh; /* Takes full viewport height */
   /* background-color: #f9f9f9;  */
   padding: 20px;
-  gap: 20px; /* Adds space between the sections */
+  gap: 20px; 
 }
-
-.About_page > div {
-  flex: 1; /* Image container takes equal space */
-  display: flex;
-  justify-content: center; /* Center the image horizontally */
-  align-items: center; /* Center the image vertically */
-}
-
-.About_page img {
-  max-width: 100%; /* Ensure image scales responsively */
-  height: auto;
-  max-height:600px; /* Restrict maximum height */
-  border-radius: 10px; /* Optional: rounded corners */
-  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
-}
-
-.About_page section {
-  flex: 1; /* Text container takes equal space */
-  padding-left: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  text-align: left; /* Align text to the left */
-  display: flex;
-  flex-direction: column; /* Stack paragraph and button vertically */
-  justify-content: center; /* Vertically center content */
-}
-
-.About_page p {
-  font-size: 1rem;
-  color: #555;
-  line-height: 1.6;
-  margin-bottom: 20px;
-}
-
-.About_page button {
-  padding: 10px 20px;
-  background-color: #3498db;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 1rem;
-  align-self: flex-start; /* Align button to the start of the section */
-  transition: background-color 0.3s ease;
-}
-
-.About_page button:hover {
-  background-color: #2c80b9;
-}
-
-
-.home_page button:hover {
-  background-color: #e69500;
-}
-  
-
-.navbar a {
-    color: aliceblue;
-    text-decoration: none;
-    font-size: 15px;
-}
-  
-.navbar a:hover {
-    text-decoration: underline;
-}
-  
-  /* Add padding to the top of your content so it isn't hidden behind the navbar */
-#_1, #_2, #_5, #_3 {
-    padding-top: 20px;
-    height: 100vh;
-    width: 100%;
-}
-
 
 .content-page {
-  /* display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  padding: 20px; */
+  margin: 0px;
   display: flex;
-    justify-content: center; /* Centers the content horizontally */
-    align-items: center; /* Centers the content vertically */
-    height: 100vh; 
-    /* background-color: #f5f5f5;  */
-    padding: 20px;
-}
-
-/* Section Title */
-#hire h1 {
-  font-size: 2rem;
-  color: #444;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-/* Contact Form */
-.contact-form {
-  background-color: #fff;
+  justify-content: center; /* Centers the content horizontally */
+  align-items: center; /* Centers the content vertically */
+  height: 100vh; /* Takes full viewport height */
+  /* background-color: #f9f9f9;  */
   padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  max-width: 400px;
-  width: 400px;
-}
-
-/* Input Fields */
-.contact-form .field {
-  margin-bottom: 20px;
-  position: relative;
-}
-
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 1rem;
-  outline: none;
-  transition: border-color 0.3s ease;
-}
-
-.contact-form input:focus,
-.contact-form textarea:focus {
-  border-color: #e69500;
-}
-
-.contact-form label {
-  position: absolute;
-  top: -8px;
-  left: 10px;
-  font-size: 0.9rem;
-  background-color: #fff;
-  padding: 0 5px;
-  color: #666;
-}
-
-/* Textarea */
-.contact-form textarea {
-  resize: none;
-}
-
-/* Button */
-.contact-form .button {
-  width: 100%;
-  padding: 10px 0;
-  background-color: #e69500;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.contact-form .button:hover {
-  background-color: #cf8600;
 }
 
 /* Responsive Design */
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
   #hire h1 {
     font-size: 1.5rem;
   }
@@ -504,7 +157,14 @@ div[id^="_"] {
   .contact-form {
     padding: 15px;
   }
-}
+} */
+
+  /* Add padding to the top of your content so it isn't hidden behind the navbar */
+/* #_1, #_2, #_5, #_4, #_3 {
+    padding-top: 20px;
+    height: 100vh;
+    width: 100%;
+} */
   
   /* Footer Styling */
 footer {
@@ -517,5 +177,58 @@ footer {
 }
 .App {
     text-align: center;
+}
+
+@media (max-width: 768px) {
+  /* Switch layout to column for sections with 'gap' */
+  .home_page,.Expe_page, .About_page, .Projects_page, .content-page {
+      flex-direction: column; /* Change to column layout */
+      gap: 20px; /* Reduce gap for smaller screens */
+  }
+
+  /* Ensure proper spacing and alignment */
+  .home_page, .About_page, .Projects_page, .content-page, .Expe_page {
+      justify-content: flex-start; /* Adjust alignment for column layout */
+  }
+
+  .Projects_page {
+    padding-top: 60px;
+  }
+
+  .Expe_page {
+    padding-top: 60px;
+  }
+
+  .content-page {
+    margin: 0px;
+    display: flex;
+    justify-content: center; /* Centers the content horizontally */
+    align-items: center; /* Centers the content vertically */
+    height: 100vh; /* Takes full viewport height */
+    /* background-color: #f9f9f9;  */
+    padding: 20px;
+  }
+
+  div[id^="_"] {
+      height: auto; /* Allow sections to adjust height */
+  }
+
+  .navbar {
+    margin-top: 25px;
+    position: fixed; 
+    top: 0;
+    left: 30%;
+    margin-left: 70px;
+    padding: 10px 15px;
+    display: flex;
+    gap: 10px;
+    border-radius: 40px;
+  }
+
+  .navbar a {
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 12px;
+}
 }
   
