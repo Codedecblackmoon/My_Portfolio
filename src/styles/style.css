@@ -1,37 +1,35 @@
 .home_page button {
     padding: 10px 20px;
-    /* background-color: rgb(255, 128, 0); */
     border: 1px solid rgb(255, 128, 0);
     color: rgb(111, 93, 75);
-    /* border: none; */
     border-radius: 5px;
     cursor: pointer;
     font-size: 1rem;
-    align-self: flex-start; /* Align button to the start of the section */
+    align-self: flex-start; 
     transition: background-color 0.3s ease;
 }
 
 .home_page > div {
-    flex: 1; /* Image container takes equal space */
+    flex: 1; 
     display: flex;
-    justify-content: center; /* Center the image horizontally */
-    align-items: center; /* Center the image vertically */
+    justify-content: center; 
+    align-items: center;
 }
   
 .home_page img {
-    max-width: 100%; /* Ensure image scales responsively */
+    max-width: 100%; 
     height: auto;
-    max-height: 300px; /* Restrict maximum height */
-    border-radius: 10px; /* Optional: rounded corners */
+    max-height: 300px; 
+    border-radius: 10px; 
 }
   
 .home_page section {
-    flex: 1; /* Quote container takes equal space */
+    flex: 1;
     padding: 20px;
-    text-align: left; /* Align text to the left */
+    text-align: left;
     display: flex;
-    flex-direction: column; /* Stack quote and button vertically */
-    justify-content: center; /* Vertically center content */
+    flex-direction: column; 
+    justify-content: center; 
 }
   
 .home_page .name {
@@ -57,16 +55,13 @@
   margin-bottom: 20px;
 }
 
-
 .navbar a:hover {
 color: #3498db;
 text-decoration: none;
 }
 
-
 .project_card {
   padding-top: 100px;
-
   display: none;
 }
 
@@ -135,16 +130,6 @@ text-decoration: none;
   gap: 20px;
 }
 
-/* .project_grid{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-  padding: 10px; 
-  width: 50%;
-  height: 40%;
-} */
-
-/* Image Styling */
 .Expe_page > div > img {
   height: 400px;
   margin: 10px;
@@ -170,12 +155,9 @@ text-decoration: none;
 .card{
   display: flex;
   align-items: center;
-  /* background-color: #ff8800; */
   justify-content: center;
-  /* border-radius: 50px; */
   border-radius: 5px;
   border: #cf8600 1px solid;
-
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
   transition: transform 0.2s ease, box-shadow 0.2s ease; 
 }
@@ -186,30 +168,28 @@ text-decoration: none;
 } 
 
 .About_page > div {
-  flex: 1; /* Image container takes equal space */
+  flex: 1;
   display: flex;
-  justify-content: center; /* Center the image horizontally */
-  align-items: center; /* Center the image vertically */
+  justify-content: center;
+  align-items: center;
 }
 
 .About_page img {
-  max-width: 100%; /* Ensure image scales responsively */
+  max-width: 100%;
   height: auto;
-  max-height:600px; /* Restrict maximum height */
-  border-radius: 10px; /* Optional: rounded corners */
-  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+  max-height:600px; 
+  border-radius: 10px; 
 }
 
 .About_page section {
-  flex: 1; /* Text container takes equal space */
+  flex: 1;
   padding-left: 20px;
   padding-top: 20px;
   padding-left: 20px;
-
-  text-align: left; /* Align text to the left */
+  text-align: left;
   display: flex;
-  flex-direction: column; /* Stack paragraph and button vertically */
-  justify-content: center; /* Vertically center content */
+  flex-direction: column;
+  justify-content: center; 
 }
 
 .About_page p {
@@ -290,12 +270,10 @@ text-decoration: none;
   color: #666;
 }
 
-/* Textarea */
 .contact-form textarea {
   resize: none;
 }
 
-/* Button */
 .contact-form .button {
   width: 100%;
   padding: 10px 0;
@@ -338,22 +316,18 @@ text-decoration: none;
   .About_page p {
     font-size: 13px;
     line-height: 1.4;
-    /* margin-bottom: 10px; */
   }
 
-  /* Image Styling */
   .Expe_page > div > img {
     height: 200px;
     margin: 5px;
   }
 
-  /* Card Grid Styling */
   .Expe_page section {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 columns for the first row */
-    /* grid-auto-rows: auto; */
-    gap: 10px; /* Space between cards */
-    width: 350px; /* Section takes 60% of the page width */
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px; 
+    width: 350px;
     margin: 10px;
     margin-left: 45px;
     height: 60px;

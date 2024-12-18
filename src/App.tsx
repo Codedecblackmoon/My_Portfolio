@@ -14,18 +14,18 @@ function App() {
      <div className="App">
       
       <nav className="navbar">
-        <a href="#_1">Home</a>
-        <a href="#_2">About</a>
-        <a href="#_3">Expirenc</a>
-        <a href="#_4">Projects</a>
-        <a href="#_5">Content</a>
+        <a href="#Home">Home</a>
+        <a href="#About">About</a>
+        <a href="#Experience">Experience</a>
+        <a href="#Projects">Projects</a>
+        <a href="#Contact">Contant</a>
       </nav>
 
-      <div id="_1"><Home /></div>
-      <div id="_2"><About/></div>
-      <div id="_3"><AXA></AXA></div>
-      <div id="_4"><Projects/></div>
-      <div id="_5"><Contect/></div>
+      <div id="Home"><Home /></div>
+      <div id="About"><About/></div>
+      <div id="Experience"><AXA></AXA></div>
+      <div id="Projects"><Projects/></div>
+      <div id="Contact"><Contect/></div>
 
       <footer>
         <div id="media">

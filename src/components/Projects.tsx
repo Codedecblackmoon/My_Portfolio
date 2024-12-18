@@ -1,5 +1,5 @@
 
-import React, { useState } from 'react';
+import { useState } from 'react';
 import pro1 from '../assets/pro_1.png';
 import pro2 from '../assets/pro.png'; // Adding another pro.png
 import pro3 from '../assets/pro.png'; // Adding another pro.png
@@ -56,13 +56,11 @@ function Projects() {
             <img src={slide.img} alt={`Slide ${index + 1}`} style={{ width: '100%' }} />
             <h3>{slide.caption}</h3>
             <div className="info">
-              {/* Code Button */}
               <a href={slide.codeLink} target="_blank" rel="noopener noreferrer">
                 <button>
                   <i className="fa-brands fa-github"></i> Code
                 </button>
               </a>
-              {/* Demo Button */}
               <a href={slide.demoLink} target="_blank" rel="noopener noreferrer">
                 <button>
                   <i className="fa-solid fa-globe"></i> Demo

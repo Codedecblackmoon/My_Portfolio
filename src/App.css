@@ -35,63 +35,52 @@ html {
   font-size: 15px;
 }
 
-/* div[id^="_"] {
-  scroll-margin-top: 60px;
-}
-
-div[id^="_"] {
-  height: 100vh;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-} */
-
 .App {
   margin: 0;
   padding: 0;
 }
   
-#_1{
+#Home{
   background:url('/images/Component_1.png');
-  background-size: cover; /* Scales the image to cover the container */
-  background-position: center; /* Centers the image */
-  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat;
   height: 100vh;
   width: 100%; 
 }
 
-#_2{
+#About{
   background-image:url('/images/Component_2.png');
-  background-size: cover; /* Scales the image to cover the container */
-  background-position: center; /* Centers the image */
-  background-repeat: no-repeat; /* Prevents the image from repeating */
-  height: 100vh; /* Sets the container height to full viewport height */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
   width: 100%; 
 }
 
-#_3{
+#Experience{
   background:url('/images/Component_3.png');
-  background-size: cover; /* Scales the image to cover the container */
-  background-position: center; /* Centers the image */
-  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat; 
   height: 100vh;
   width: 100%; 
 }
 
-#_4{
+#Projects{
   background:url('/images/Component_4.png');
-  background-size: cover; /* Scales the image to cover the container */
-  background-position: center; /* Centers the image */
-  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat;
   height: 100vh;
   width: 100%; 
 }
 
-#_5{
+#Contact{
   background:url('/images/Component_5.png');
-  background-size: cover; /* Scales the image to cover the container */
-  background-position: center; /* Centers the image */
-  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
   height: 100vh;
   width: 100%; 
 }
@@ -116,24 +105,20 @@ div[id^="_"] {
   
 .Expe_page {
   margin: 0px;
-  display: flex; /* Arrange the image and the grid horizontally */
+  display: flex; 
   gap: 40px;
   padding: 20px;
   padding-top: 150px;
-  /* background-color: #f5f5f5;  */
-  /* align-items: center; */
   justify-content: center;
   height: 100vh;
-  /* margin-top: 0px ; */
 }
 
 .About_page {
   margin: 0px;
   display: flex;
-  justify-content: center; /* Centers the content horizontally */
-  align-items: center; /* Centers the content vertically */
-  height: 100vh; /* Takes full viewport height */
-  /* background-color: #f9f9f9;  */
+  justify-content: center; 
+  align-items: center; 
+  height: 100vh; 
   padding: 20px;
   gap: 20px; 
 }
@@ -141,32 +126,12 @@ div[id^="_"] {
 .content-page {
   margin: 0px;
   display: flex;
-  justify-content: center; /* Centers the content horizontally */
-  align-items: center; /* Centers the content vertically */
-  height: 100vh; /* Takes full viewport height */
-  /* background-color: #f9f9f9;  */
+  justify-content: center; 
+  align-items: center;
+  height: 100vh; 
   padding: 20px;
 }
 
-/* Responsive Design */
-/* @media (max-width: 480px) {
-  #hire h1 {
-    font-size: 1.5rem;
-  }
-
-  .contact-form {
-    padding: 15px;
-  }
-} */
-
-  /* Add padding to the top of your content so it isn't hidden behind the navbar */
-/* #_1, #_2, #_5, #_4, #_3 {
-    padding-top: 20px;
-    height: 100vh;
-    width: 100%;
-} */
-  
-  /* Footer Styling */
 footer {
     background-color: #222;
     color: white;
@@ -246,15 +211,12 @@ footer #media{
 }
 
 @media (max-width: 768px) {
-  /* Switch layout to column for sections with 'gap' */
   .home_page,.Expe_page, .About_page, .Projects_page, .content-page {
-      flex-direction: column; /* Change to column layout */
-      gap: 20px; /* Reduce gap for smaller screens */
+      flex-direction: column; 
   }
 
-  /* Ensure proper spacing and alignment */
   .home_page, .About_page, .Projects_page, .content-page, .Expe_page {
-      justify-content: flex-start; /* Adjust alignment for column layout */
+      justify-content: flex-start; 
   }
 
   .Projects_page {
@@ -268,15 +230,10 @@ footer #media{
   .content-page {
     margin: 0px;
     display: flex;
-    justify-content: center; /* Centers the content horizontally */
-    align-items: center; /* Centers the content vertically */
-    height: 100vh; /* Takes full viewport height */
-    /* background-color: #f9f9f9;  */
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
     padding: 20px;
-  }
-
-  div[id^="_"] {
-      height: auto; /* Allow sections to adjust height */
   }
 
   .navbar {
@@ -295,6 +252,6 @@ footer #media{
     color: aliceblue;
     text-decoration: none;
     font-size: 12px;
-}
+  }
 }
   
