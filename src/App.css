@@ -175,6 +175,72 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+footer #content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0px;
+  padding: 0px;
+}
+
+footer #content #email{
+  margin: 1px;
+  padding: 0px;
+}
+
+footer #media{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin: 10px;
+  padding: 0px;
+}
+
+#media a {
+  margin: 0 10px; 
+  color: inherit; 
+  text-decoration: none; 
+}
+
+#content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#content h6{
+  font-size: 10px;
+  padding: 10px;
+  color: rgb(148, 148, 148);
+}
+
+#media > a > img{
+  height: 20px;
+}
+
+#otherimg{
+  padding: 40px;
+  margin-left: 16%;
+}
+
+#enter h1{
+  font-size: 21px;
+  font-weight: 500;
+}
+
 .App {
     text-align: center;
 }
