@@ -240,12 +240,14 @@ footer #media{
     margin-top: 25px;
     position: fixed; 
     top: 0;
-    left: 30%;
-    margin-left: 70px;
+    left:54%;
     padding: 10px 15px;
     display: flex;
     gap: 10px;
     border-radius: 40px;
+    align-items: center;
+    width: 310px;
+    justify-content: center;
   }
 
   .navbar a {
