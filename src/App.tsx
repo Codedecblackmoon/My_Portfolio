@@ -18,7 +18,7 @@ function App() {
         <a href="#About">About</a>
         <a href="#Experience">Experience</a>
         <a href="#Projects">Projects</a>
-        <a href="#Contact">Contant</a>
+        <a href="#Contact">Contact</a>
       </nav>
 
       <div id="Home"><Home /></div>
