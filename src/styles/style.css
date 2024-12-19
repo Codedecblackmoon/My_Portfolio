@@ -330,7 +330,7 @@ text-decoration: none;
     width: 350px;
     margin: 10px;
     height: 60px;
-    margin-left: 11%;
+    /* margin-left: 11%; */
   }
 
   .project_card{
