@@ -143,6 +143,14 @@ text-decoration: none;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+.info button:hover{
+  padding: 6px 16px;
+  background-color: #3498db;
+  color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ffffff;
+}
+
 .Projects_page > div {
   display: flex;
   justify-content: center;
@@ -221,7 +229,7 @@ text-decoration: none;
 
 .About_page button {
   padding: 10px 20px;
-  background-color: #3498db;
+  background-color: #0098fd;
   color: white;
   border: none;
   border-radius: 5px;
@@ -232,7 +240,11 @@ text-decoration: none;
 }
 
 .About_page button:hover {
-  background-color: #2c80b9;
+  background-color: #0099ff;
+  transition-duration: 300ms;
+  padding: 11px 21px;
+  color: #fff; /* Base text color */
+  text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ffffff;
 }
 
 .home_page button:hover {

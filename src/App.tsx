@@ -45,7 +45,7 @@ function App() {
         <div id="content">
           <h6 id="email">gideonlenge96@gmail.com</h6>
           <h6 id="email">+27 815 - 892 - 060</h6>
-          <h6 id="email">By Gideon.L</h6>
+          <h6 id="email">&copy; 2025 By Gideon.L All rights reserved</h6>
         </div>
       </footer>
     </div>
