@@ -210,6 +210,24 @@ footer #media{
     text-align: center;
 }
 
+
+
+.cursor {
+  margin-left: 5px;
+  animation: blink 0.7s steps(1) infinite;
+}
+
+/* Blinking effect for the cursor */
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+
 @media (max-width: 768px) {
   .home_page,.Expe_page, .About_page, .Projects_page, .content-page {
       flex-direction: column; 
