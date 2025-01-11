@@ -101,6 +101,7 @@ text-decoration: none;
   text-align: center;
   transition: transform 0.3s ease;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+  height: 500px;
 }
 
 .project_card img{
@@ -110,6 +111,24 @@ text-decoration: none;
   border-radius: 10px;
 }
 
+.project_card .caption p {
+  font-size: 13px;
+  line-height: 1.2; /* Adjust the spacing between lines */
+  margin: 0; /* Remove default margin */
+  padding: 15px;
+  color: #333; /* Text color, customize if needed */
+}
+
+.project_card .caption strong{
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.project_card .caption span {
+  font-weight: bold; /* Make span text bold */
+  color: #007acc; /* Customize the span text color */
+}
+
 .info{
   display: flex;
   justify-content: center;
@@ -117,6 +136,7 @@ text-decoration: none;
 }
 
 .info button{
+  margin-top: 20px;
   padding: 5px 15px;
   border: 0px;
   border-radius: 5px;
@@ -337,8 +357,9 @@ text-decoration: none;
     background-color:rgb(255, 145, 0);
     border-radius: 20px;
     min-height:100px;
-    max-width: 300px;
+    max-width: 500px;
     padding: 20px;
+    height: 500px;
   }
 
   .Projects_page > div {
@@ -349,8 +370,7 @@ text-decoration: none;
   }
   
   .Projects_page > div > img {
-    height: 200px;
-    margin: 5px;
+    display: none;
   }
 
 }
