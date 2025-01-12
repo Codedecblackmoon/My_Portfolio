@@ -256,6 +256,16 @@ text-decoration: none;
   text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ffffff;
   padding: 12px 22px;
 }
+
+.services_page button:hover {
+  background-color: #e69500;
+  color: #fff; /* Base text color */
+  text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ffffff;
+  padding: 12px 22px;
+}
+
+/* From https://css.glass */
+
     
 #hire h1 {
   font-size: 2rem;
@@ -324,8 +334,70 @@ text-decoration: none;
   background-color: #cf8600;
 }
 
+
+
+.services_page section {
+  background: rgba(255, 255, 255, 0.07);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.3px);
+  -webkit-backdrop-filter: blur(7.3px);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  padding: 200px, 20px;
+}
+
+.services_page .services {
+  display: flex;
+  flex-direction: row; 
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .services_page > div {
+  flex: 1; 
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+} */
+
+
+
+/* .services_page section {
+  flex: 1;
+  padding: 20px;
+  text-align: left;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center; 
+} */
+
+
+
+.services_page h2 {
+font-size: 1.2rem;
+color: #555;
+line-height: 1.5;
+margin-bottom: 10px;
+}
+
+
+
 @media (max-width: 768px) {
   .home_page img {
+    max-width: 100%; 
+    height: auto;
+    max-height: 200px;
+    margin-top: 80px;
+    margin-bottom: 0px;
+  }
+
+  .services_page img {
     max-width: 100%; 
     height: auto;
     max-height: 200px;

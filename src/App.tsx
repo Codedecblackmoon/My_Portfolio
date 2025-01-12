@@ -2,6 +2,7 @@ import Home from './components/Home'
 import About from './components/About'
 import Projects from './components/Projects'
 import Contect from './components/Contact'
+import Services from './components/Services'
 import AXA from './components/Expe';
 import  git from './assets/git_whait.png'
 import  intsa from './assets/insta.png'
@@ -25,6 +26,7 @@ function App() {
       <div id="About"><About/></div>
       <div id="Experience"><AXA></AXA></div>
       <div id="Projects"><Projects/></div>
+      <div id="Services"><Services/></div>
       <div id="Contact"><Contect/></div>
 
       <footer>

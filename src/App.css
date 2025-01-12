@@ -68,7 +68,7 @@ html {
 }
 
 #Projects{
-  background:url('/images/Component_4.png');
+  background:url('/images/Component_55.png');
   background-size: cover; 
   background-position: center; 
   background-repeat: no-repeat;
@@ -76,8 +76,17 @@ html {
   width: 100%; 
 }
 
+#Services{
+  background:url('/images/Component_44.png');
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%; 
+}
+
 #Contact{
-  background:url('/images/Component_5.png');
+  background:url('/images/Component_6.png');
   background-size: cover; 
   background-position: center; 
   background-repeat: no-repeat; 
@@ -86,6 +95,15 @@ html {
 }
 
 .home_page {
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+  padding: 20px;
+}
+
+.services_page {
   margin: 0px;
   display: flex;
   justify-content: center;
@@ -229,11 +247,11 @@ footer #media{
 
 
 @media (max-width: 768px) {
-  .home_page,.Expe_page, .About_page, .Projects_page, .content-page {
+  .home_page,.Expe_page, .About_page, .Projects_page, .services_page, .content-page {
       flex-direction: column; 
   }
 
-  .home_page, .About_page, .Projects_page, .content-page, .Expe_page {
+  .home_page, .About_page, .Projects_page, .content-page, .services_page, .Expe_page {
       justify-content: flex-start; 
   }
 
