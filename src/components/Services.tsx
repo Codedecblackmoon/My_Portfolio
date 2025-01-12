@@ -1,7 +1,9 @@
-import React, { useState, useEffect } from 'react';
-import logo from '../assets/coool.png';
-
-// import logo from '../assets/coool.png'
+import web from '../assets/web.png';
+import gd from '../assets/gd.png';
+import ill from '../assets/logo.png';
+import dD from'../assets/3d.png';
+import systems from '../assets/system.png';
+import webapp from '../assets/webapp.png';
 
 function Services() {
     return (
@@ -11,30 +13,30 @@ function Services() {
                 <div className='services'>
                     <div id='set1'>
                         <div id='s1'>
-                            <img src="" alt="" />
-                            <p><strong>Web development</strong> Lorem ipsum dolor sit amet.</p>
+                            <img src={web} alt="" />
+                            <p><strong>Web development</strong><br />Lorem ipsum dolor sit amet.</p>
                         </div>
                         <div id='s1'>
-                            <img src="" alt="" />
-                            <p><strong>Web development</strong> Lorem ipsum dolor sit amet.</p>
+                            <img src={gd} alt="" />
+                            <p><strong>Graphic Design</strong><br />Lorem ipsum dolor sit amet.</p>
                         </div>
                         <div id='s1'>
-                            <img src="" alt="" />
-                            <p><strong>Web development</strong> Lorem ipsum dolor sit amet.</p>
+                            <img src={ill} alt="" />
+                            <p><strong>Illustation</strong><br />Lorem ipsum dolor sit amet.</p>
                         </div>
                     </div>
                     <div id='set2'>
                     <div id='s1'>
-                            <img src="" alt="" />
-                            <p><strong>Web development</strong> Lorem ipsum dolor sit amet.</p>
+                            <img src={dD} alt="" />
+                            <p><strong>3D Modaling</strong><br />Lorem ipsum dolor sit amet.</p>
                         </div>
                         <div id='s1'>
-                            <img src="" alt="" />
-                            <p><strong>Web development</strong> Lorem ipsum dolor sit amet.</p>
+                            <img src={systems} alt="" />
+                            <p><strong>System Integrationt</strong><br />Lorem ipsum dolor sit amet.</p>
                         </div>
                         <div id='s1'>
-                            <img src="" alt="" />
-                            <p><strong>Web development</strong> Lorem ipsum dolor sit amet.</p>
+                            <img src={webapp} alt="" />
+                            <p><strong>Web Application</strong><br />Lorem ipsum dolor sit amet.</p>
                         </div>
                     </div>
                 </div>
