@@ -105,7 +105,7 @@ function Projects() {
         `
         <p><strong>QR Code Generator</strong><br>
         A simple QR code generator<br>
-        A modern web application built with <span>React</span> and <span>Node.js</span>.
+        A modern mimalistic and responsive web website that will allow you to generate QR codes and download them for later using  <span>TypeScript</span>, <span>html</span>, <span>HTML</span> and <span>CSS</span>.
         </p>`,
       codeLink: 'https://github.com/Codedecblackmoon/QR_Code_Generator',
       demoLink: 'https://codedecblackmoon.github.io/QR_Code_Generator/index.html',

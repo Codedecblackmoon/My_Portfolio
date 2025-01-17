@@ -104,7 +104,8 @@ text-decoration: none;
   text-align: center;
   transition: transform 0.3s ease;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
-  height: 500px;
+  height: 520px;
+  max-width: 400px;
 }
 
 .project_card img{
@@ -116,10 +117,10 @@ text-decoration: none;
 
 .project_card .caption p {
   font-size: 13px;
-  line-height: 1.2; /* Adjust the spacing between lines */
-  margin: 0; /* Remove default margin */
+  line-height: 1.2; 
+  margin: 0; 
   padding: 15px;
-  color: #333; /* Text color, customize if needed */
+  color: #333; 
 }
 
 .project_card .caption strong{
@@ -128,8 +129,8 @@ text-decoration: none;
 }
 
 .project_card .caption span {
-  font-weight: bold; /* Make span text bold */
-  color: #007acc; /* Customize the span text color */
+  font-weight: bold; 
+  color: #007acc;
 }
 
 .info{
@@ -263,8 +264,6 @@ text-decoration: none;
   text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ffffff;
   padding: 12px 22px;
 }
-
-/* From https://css.glass */
 
     
 #hire h1 {
