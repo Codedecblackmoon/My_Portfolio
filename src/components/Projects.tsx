@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import pro1 from '../assets/pro_1.png';
 import pro2 from '../assets/pro_2.png';
-import pro3 from '../assets/pro.png';
+import pro3 from '../assets/pro_3.png';
 import stn from '../assets/path14.png';
 
 function Projects() {
@@ -32,12 +32,11 @@ function Projects() {
       id: 3,
       img: pro3,
       caption: `
-        <p><strong>Project 3</strong><br>
-        Features secure payment integration.<br>
-        A responsive e-commerce platform using <span>Vue.js</span> and <span>Firebase</span>.
+        <p><strong>Design Gallery</strong><br>
+        "Still in development" A responsive web application that allows photos to be share and find design inspiration, built with <span>React</span>, <span>HTML</span>, <span>CSS</span> and <span>TypeScript</span>.
         </p>`,
-      codeLink: 'https://github.com/user/project3',
-      demoLink: 'https://demo.project3.com',
+      codeLink: 'https://github.com/Codedecblackmoon/Design-Gallery',
+      demoLink: 'https://design-gallery-two.vercel.app/',
     },
   ];
 
