@@ -32,7 +32,7 @@ function Services() {
                         </div>
                         <div id='s1'>
                             <img src={gd} alt="" />
-                            <p><strong>Graphic Design</strong><br /> Adobe Photoshop,InDesign, Mockups</p>
+                            <p><strong>Graphic Design</strong><br /> Adobe Photoshop, InDesign, Mockups</p>
                         </div>
                         <div id='s1'>
                             <img src={ill} alt="" />
