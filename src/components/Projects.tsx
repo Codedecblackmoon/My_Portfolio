@@ -26,7 +26,7 @@ function Projects() {
         The project is a 3D art inspiration generantor that helps artists brainstorm ideas. Based on the chosen difficulty (Easy, Medium, or Hard), it suggests an object with 2, 3, or 4 colors (including HEX codes), built with <span>Python</span>, <span>Flask</span>, <span>HTML</span> and <span>CSS</span>.
         </p>`,
       codeLink: 'https://github.com/Codedecblackmoon/3D-Artist-Inspiration-Generator',
-      // demoLink: 'https://demo.project2.com',
+      demoLink: 'https://portfolio-error-handling.vercel.app/',
     },
     {
       id: 3,

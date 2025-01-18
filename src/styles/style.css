@@ -145,6 +145,7 @@ text-decoration: none;
   border: 0px;
   border-radius: 5px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 }
 
 .info button:hover{
@@ -153,6 +154,8 @@ text-decoration: none;
   color: #fff;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
   text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ffffff;
+  cursor: pointer;
+
 }
 
 .Projects_page > div {
