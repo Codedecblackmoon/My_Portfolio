@@ -214,6 +214,17 @@ footer #media{
   height: 20px;
 }
 
+#media a:hover {
+  margin: 5 15px; 
+  color: #3498db;  
+}
+
+#media > a > img:hover {
+  height: 30px;
+}
+
+
+
 #otherimg{
   padding: 40px;
   margin-left: 16%;
