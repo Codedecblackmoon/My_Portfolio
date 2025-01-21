@@ -28,7 +28,7 @@ function Services() {
                     <div id='set2'>
                         <div id='s1'>
                             <img src={dD} alt="" />
-                            <p><strong>3D Modaling</strong><br />Blende, Maya, 3ds Max, </p>
+                            <p><strong>3D Modeling</strong><br />Blende, Maya, 3ds Max, </p>
                         </div>
                         <div id='s1'>
                             <img src={gd} alt="" />
