@@ -5,6 +5,11 @@
   Your browser does not support the video tag.
 </video>
 
+<div align="center">
+  <img src="./images/s1 (3).png" alt="App Screenshot" width="700">
+</div>
+
+
 🚀 **Welcome to My Portfolio!**  
 I'm super excited to share my just-finished portfolio, showcasing my skills and creativity in web development and design. Here's what you can expect:
 
@@ -20,6 +25,13 @@ I'm super excited to share my just-finished portfolio, showcasing my skills and 
 - **Custom SVGs** designed from scratch.
 - **Custom Backgrounds** to add personality.
 - **Micro Animations** on buttons to enhance the user experience (UX).
+
+<div align="center">
+  <img src="./images/s1 (2).png" alt="App Screenshot" width="700">
+</div>
+<div align="center">
+  <img src="./images/s1 (1).png" alt="App Screenshot" width="700">
+</div>
 
 ## Design Approach
 My goal was to go beyond the classic portfolio layout and showcase both my **design skills** and **creative thinking**. The stylistic design is aimed at leaving a lasting impression.
