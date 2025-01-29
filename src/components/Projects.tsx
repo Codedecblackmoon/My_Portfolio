@@ -13,7 +13,7 @@ function Projects() {
       caption:
         `
         <p><strong>QR Code Generator</strong><br>
-        A modern mimalistic and responsive web website that will allow you to generate QR codes and download them for later using, built with <span>TypeScript</span>, <span>html</span>, <span>HTML</span> and <span>CSS</span>.
+        A modern minimalistic and responsive web website that will allow you to generate QR codes and download them for later use, built with <span>TypeScript</span>, <span>HTML</span> and <span>CSS</span>.
         </p>`,
       codeLink: 'https://github.com/Codedecblackmoon/QR_Code_Generator',
       demoLink: 'https://codedecblackmoon.github.io/QR_Code_Generator/index.html',
