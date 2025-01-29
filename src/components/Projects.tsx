@@ -23,7 +23,7 @@ function Projects() {
       img: pro2,
       caption: `
         <p><strong>3D artist Inspiration Generator</strong><br>
-        The project is a 3D art inspiration generantor that helps artists brainstorm ideas. Based on the chosen difficulty (Easy, Medium, or Hard), it suggests an object with 2, 3, or 4 colors (including HEX codes), built with <span>Python</span>, <span>Flask</span>, <span>HTML</span> and <span>CSS</span>.
+        The project is a 3D art inspiration generator that helps artists brainstorm ideas. Based on the chosen difficulty (Easy, Medium, or Hard), it suggests an object with 2, 3, or 4 colors (including HEX codes), built with <span>Python</span>, <span>Flask</span>, <span>HTML</span> and <span>CSS</span>.
         </p>`,
       codeLink: 'https://github.com/Codedecblackmoon/3D-Artist-Inspiration-Generator',
       demoLink: 'https://portfolio-error-handling.vercel.app/',
