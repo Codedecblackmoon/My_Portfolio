@@ -33,7 +33,7 @@ function Projects() {
       img: pro3,
       caption: `
         <p><strong>Design Gallery</strong><br>
-        "Still in development" A responsive web application that allows photos to be share and find design inspiration, built with <span>React</span>, <span>HTML</span>, <span>CSS</span> and <span>TypeScript</span>.
+        "Still in development" A responsive web application that allows photos to be shared and find design inspiration, built with <span>React</span>, <span>HTML</span>, <span>CSS</span> and <span>TypeScript</span>.
         </p>`,
       codeLink: 'https://github.com/Codedecblackmoon/Design-Gallery',
       demoLink: 'https://design-gallery-two.vercel.app/',
