@@ -37,7 +37,7 @@ function Projects() {
         </p>`,
       codeLink: 'https://github.com/Codedecblackmoon/Design-Gallery',
       demoLink: 'https://design-gallery-two.vercel.app/',
-    },jmmm
+    },
   ];
 
   const [currentSlide, setCurrentSlide] = useState(0);
