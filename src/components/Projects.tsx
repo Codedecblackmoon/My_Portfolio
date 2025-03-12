@@ -4,11 +4,23 @@ import pro1 from '../assets/pro_1.png';
 import pro2 from '../assets/pro_2.png';
 import pro3 from '../assets/pro_3.png';
 import stn from '../assets/path14.png';
+import pro0 from '../assets/pro_0.png';
 
 function Projects() {
   const slides = [
     {
       id: 1,
+      img: pro0,
+      caption:
+        `
+        <p><strong>All Christain Clouthing Brand</strong><br>
+        "Still in development" A simple e-commers website tailed to all christain clothing brand, designed with the brand identy in maind and user friendly, built with <span>Javascript</span>, <span>HTML</span> and <span>CSS</span>.
+        </p>`,
+      codeLink: 'https://github.com/Codedecblackmoon/All_Christian_Brand',
+      demoLink: 'https://codedecblackmoon.github.io/All_Christian_Brand/',
+    },
+    {
+      id: 2,
       img: pro1,
       caption:
         `
@@ -19,7 +31,7 @@ function Projects() {
       demoLink: 'https://codedecblackmoon.github.io/QR_Code_Generator/index.html',
     },
     {
-      id: 2,
+      id: 3,
       img: pro2,
       caption: `
         <p><strong>3D artist Inspiration Generator</strong><br>
@@ -29,7 +41,7 @@ function Projects() {
       demoLink: 'https://portfolio-error-handling.vercel.app/',
     },
     {
-      id: 3,
+      id: 4,
       img: pro3,
       caption: `
         <p><strong>Design Gallery</strong><br>
