@@ -1,4 +1,4 @@
-import { BadgeCheck, Handshake, Mail, Phone } from 'lucide-react';
+import { BadgeCheck, Handshake, Mail } from 'lucide-react';
 
 function Footer() {
 
