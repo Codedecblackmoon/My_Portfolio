@@ -1,40 +1,40 @@
 {
-  "name": "simple-login-signin-page",
+  "name": "new_portfolio",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://Codedecblackmoon.github.io/My_Portfolio",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "preview": "vite preview"
   },
   "dependencies": {
-    "bootstrap": "^5.3.3",
-    "emailjs-com": "^3.2.0",
-    "jquery": "^3.7.1",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "react-helmet": "^6.1.0",
-    "simple-login-signin-page": "file:",
-    "web-vitals": "^4.2.4"
+    "@emailjs/browser": "^4.4.1",
+    "emailjs": "^5.0.2",
+    "lucide-react": "^1.26.0",
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6",
+    "react-router-dom": "^7.18.0"
   },
   "devDependencies": {
-    "@eslint/js": "^9.9.0",
-    "@types/jquery": "^3.5.32",
-    "@types/react": "^18.3.7",
-    "@types/react-dom": "^18.3.0",
-    "@vitejs/plugin-react": "^4.3.1",
-    "eslint": "^9.9.0",
-    "eslint-plugin-react-hooks": "^5.1.0-rc.0",
-    "eslint-plugin-react-refresh": "^0.4.9",
-    "gh-pages": "^6.2.0",
-    "globals": "^15.9.0",
-    "typescript": "^5.6.2",
-    "typescript-eslint": "^8.0.1",
-    "vite": "^5.4.11"
+    "@babel/core": "^7.29.0",
+    "@eslint/js": "^10.0.1",
+    "@rolldown/plugin-babel": "^0.2.3",
+    "@tailwindcss/vite": "^4.3.3",
+    "@types/babel__core": "^7.20.5",
+    "@types/node": "^24.12.3",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.1",
+    "babel-plugin-react-compiler": "^1.0.0",
+    "eslint": "^10.3.0",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "eslint-plugin-react-refresh": "^0.5.2",
+    "globals": "^17.6.0",
+    "tailwindcss": "^4.3.3",
+    "typescript": "~6.0.2",
+    "typescript-eslint": "^8.59.2",
+    "vite": "^8.0.12"
   }
 }

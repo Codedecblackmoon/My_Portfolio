@@ -1,56 +1,75 @@
-### My Portfolio
----
-</br>
+# React + TypeScript + Vite
 
-🚀 **Welcome to My Portfolio!**  
-I'm super excited to share my just-finished portfolio, showcasing my skills and creativity in web development and design. Here's what you can expect:
-</br>
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-<div align="center">
-  <img src="./images/s1 (3).png" alt="App Screenshot" width="700">
-</div>
+Currently, two official plugins are available:
 
----
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-</br>
+## React Compiler
 
-## Technologies Used
-- **React**
-- **TypeScript**
-- **HTML**
-- **CSS**
-- **Email.js API** (for seamless message handling)
+The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
 
-## Unique Features
-✨ To make it stand out, I included:
-- **Custom SVGs** designed from scratch.
-- **Custom Backgrounds** to add personality.
-- **Micro Animations** on buttons to enhance the user experience (UX).
+Note: This will impact Vite dev & build performances.
 
-</br>
+## Expanding the ESLint configuration
 
----
+If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
-<div align="center">
-  <img src="./images/s1 (2).png" alt="App Screenshot" width="700">
-</div>
-<div align="center">
-  <img src="./images/s1 (1).png" alt="App Screenshot" width="700">
-</div>
+```js
+export default defineConfig([
+  globalIgnores(['dist']),
+  {
+    files: ['**/*.{ts,tsx}'],
+    extends: [
+      // Other configs...
 
----
+      // Remove tseslint.configs.recommended and replace with this
+      tseslint.configs.recommendedTypeChecked,
+      // Alternatively, use this for stricter rules
+      tseslint.configs.strictTypeChecked,
+      // Optionally, add this for stylistic rules
+      tseslint.configs.stylisticTypeChecked,
 
-</br>
+      // Other configs...
+    ],
+    languageOptions: {
+      parserOptions: {
+        project: ['./tsconfig.node.json', './tsconfig.app.json'],
+        tsconfigRootDir: import.meta.dirname,
+      },
+      // other options...
+    },
+  },
+])
+```
 
-## Design Approach
-My goal was to go beyond the classic portfolio layout and showcase both my **design skills** and **creative thinking**. The stylistic design is aimed at leaving a lasting impression.
+You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
 
-## Check It Out
-🔗 [View My Portfolio Here](https://lnkd.in/dRTWf35a)
+```js
+// eslint.config.js
+import reactX from 'eslint-plugin-react-x'
+import reactDom from 'eslint-plugin-react-dom'
 
-## Feedback
-🙌 Your feedback means the world to me! Feel free to share your thoughts, suggestions, or ideas for improvement.
-
----
-Thank you for taking the time to explore my work! 😊
-
+export default defineConfig([
+  globalIgnores(['dist']),
+  {
+    files: ['**/*.{ts,tsx}'],
+    extends: [
+      // Other configs...
+      // Enable lint rules for React
+      reactX.configs['recommended-typescript'],
+      // Enable lint rules for React DOM
+      reactDom.configs.recommended,
+    ],
+    languageOptions: {
+      parserOptions: {
+        project: ['./tsconfig.node.json', './tsconfig.app.json'],
+        tsconfigRootDir: import.meta.dirname,
+      },
+      // other options...
+    },
+  },
+])
+```
