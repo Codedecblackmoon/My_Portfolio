@@ -1,5 +1,4 @@
-import { useState } from 'react'
-// import image from './assets/h2.png'
+
 import './App.css'
 import './home.css'
 
