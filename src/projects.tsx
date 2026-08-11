@@ -19,7 +19,7 @@ function Project() {
     {
       name: 'ACB online store',
       description:
-        'All Christian" embodies unity, faith, and compassion. This brand represents a community that shares Christian values, promoting love, kindness, and acceptance. It symbolizes a collective identity for Christians worldwide, fostering a sense of belonging and spiritual connection.',
+        'All Christian" embodies unity, faith, and compassion. This                          brand represents a community that shares Christian values, promoting love, kindness, and acceptance. It symbolizes a collective identity for Christians worldwide, fostering a sense of belonging and spiritual connection.',
       story: [
         '',
       ],
@@ -39,111 +39,116 @@ function Project() {
   const project = projects[index];
 
   return (
-    <div className="min-h-screen text-white flex items-center justify-center p-6 sm:p-10 border-t border-white/20">
-      <div className="w-full max-w-5xl flex flex-col md:flex-row items-center gap-6">
-        {/* Left arrow - desktop only, flanks content */}
-        <button
-          onClick={goPrev}
-          aria-label="Previous project"
-          className="hidden md:flex shrink-0 w-10 h-10 rounded-full border-1 border-white items-center justify-center hover:bg-white hover:text-black transition-colors"
-        >
-          <ArrowLeft size={18} />
-        </button>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-start flex-1 w-full">
-          {/* Left column: text */}
-          <div>
-            <h1
-              className="text-center md:text-left leading-none mb-6 md:mb-8"
-              style={{
-                fontFamily: '"Archivo Black", sans-serif',
-                fontOpticalSizing: 'auto',
-                fontWeight: 200,
-                fontStyle: 'normal',
-                WebkitTextStroke: '0.3px white',
-                color: 'transparent',
-                fontSize: 'clamp(2.25rem, 5.5vw, 6.5rem)',
-              }}
+    <>
+      <section id="project">
+        <div className="min-h-screen text-white flex items-center justify-center p-6 sm:p-10 border-t border-white/20">
+          <div className="w-full max-w-5xl flex flex-col md:flex-row items-center gap-6">
+            {/* Left arrow - desktop only, flanks content */}
+            <button
+              onClick={goPrev}
+              aria-label="Previous project"
+              className="hidden md:flex shrink-0 w-10 h-10 rounded-full border-1 border-white items-center justify-center hover:bg-white hover:text-black transition-colors"
             >
-              PROJECTS
-            </h1>
+              <ArrowLeft size={18} />
+            </button>
 
-            <h2 className="text-2xl text-center md:text-left font-black tracking-tight mb-4">
-              {project.name}
-            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-start flex-1 w-full">
+              {/* Left column: text */}
+              <div>
+                <h1
+                  className="text-center md:text-left leading-none mb-6 md:mb-8"
+                  style={{
+                    fontFamily: '"Archivo Black", sans-serif',
+                    fontOpticalSizing: 'auto',
+                    fontWeight: 200,
+                    fontStyle: 'normal',
+                    WebkitTextStroke: '0.3px white',
+                    color: 'transparent',
+                    fontSize: 'clamp(2.25rem, 5.5vw, 6.5rem)',
+                  }}
+                >
+                  PROJECTS
+                </h1>
 
-            <p className="text-sm text-center md:text-left leading-relaxed mb-4">
-              {project.description}
-            </p>
+                <h2 className="text-2xl text-center md:text-left font-black tracking-tight mb-4">
+                  {project.name}
+                </h2>
 
-            {project.story.map((paragraph, i) => (
-              <p key={i} className="text-sm text-center md:text-left leading-relaxed mb-4 last:mb-0">
-                {paragraph}
-              </p>
-            ))}
+                <p className="text-sm text-center md:text-left leading-relaxed mb-4">
+                  {project.description}
+                </p>
 
-            <p className="pt-4 text-sm text-center md:text-left leading-relaxed mb-4">
-              {project.Skills}
-            </p>
-          </div>
+                {project.story.map((paragraph, i) => (
+                  <p key={i} className="text-sm text-center md:text-left leading-relaxed mb-4 last:mb-0">
+                    {paragraph}
+                  </p>
+                ))}
 
-          {/* Right column: card */}
-          <div className="border-1 border-white rounded-3xl p-4 sm:p-5 flex flex-col gap-4">
-            <img
-              src={project.image}
-              alt={project.name}
-              className="rounded-2xl aspect-[4/3] w-full object-cover bg-gray-200"
-            />
+                <p className="pt-4 text-sm text-center md:text-left leading-relaxed mb-4">
+                  {project.Skills}
+                </p>
+              </div>
 
-            <div className="flex gap-4">
-              <a
-                href={project.github}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex-1 border-1 border-white rounded-full py-2 text-sm font-medium text-black bg-white text-center hover:bg-black hover:text-white transition-colors"
+              {/* Right column: card */}
+              <div className="border-1 border-white rounded-3xl p-4 sm:p-5 flex flex-col gap-4">
+                <img
+                  src={project.image}
+                  alt={project.name}
+                  className="rounded-2xl aspect-[4/3] w-full object-cover bg-gray-200"
+                />
+
+                <div className="flex gap-4">
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-1 border-1 border-white rounded-full py-2 text-sm font-medium text-black bg-white text-center hover:bg-black hover:text-white transition-colors"
+                  >
+                    Github
+                  </a>
+                  <a
+                    href={project.live}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-1 border-1 border-white rounded-full py-2 text-sm font-medium text-white text-center hover:bg-white hover:text-black transition-colors"
+                  >
+                    Demo
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* Right arrow - desktop only, flanks content */}
+            <button
+              onClick={goNext}
+              aria-label="Next project"
+              className="hidden md:flex shrink-0 w-10 h-10 rounded-full border-1 border-white items-center justify-center hover:bg-white hover:text-black transition-colors"
+            >
+              <ArrowRight size={18} />
+            </button>
+
+            {/* Prev/Next row - mobile only, below content */}
+            <div className="flex md:hidden items-center justify-center gap-6 mt-2">
+              <button
+                onClick={goPrev}
+                aria-label="Previous project"
+                className="shrink-0 w-10 h-10 rounded-full border-1 border-white flex items-center justify-center hover:bg-white hover:text-black transition-colors"
               >
-                Github
-              </a>
-              <a
-                href={project.live}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex-1 border-1 border-white rounded-full py-2 text-sm font-medium text-white text-center hover:bg-white hover:text-black transition-colors"
+                <ArrowLeft size={18} />
+              </button>
+              <button
+                onClick={goNext}
+                aria-label="Next project"
+                className="shrink-0 w-10 h-10 rounded-full border-1 border-white flex items-center justify-center hover:bg-white hover:text-black transition-colors"
               >
-                Demo
-              </a>
+                <ArrowRight size={18} />
+              </button>
             </div>
           </div>
         </div>
-
-        {/* Right arrow - desktop only, flanks content */}
-        <button
-          onClick={goNext}
-          aria-label="Next project"
-          className="hidden md:flex shrink-0 w-10 h-10 rounded-full border-1 border-white items-center justify-center hover:bg-white hover:text-black transition-colors"
-        >
-          <ArrowRight size={18} />
-        </button>
-
-        {/* Prev/Next row - mobile only, below content */}
-        <div className="flex md:hidden items-center justify-center gap-6 mt-2">
-          <button
-            onClick={goPrev}
-            aria-label="Previous project"
-            className="shrink-0 w-10 h-10 rounded-full border-1 border-white flex items-center justify-center hover:bg-white hover:text-black transition-colors"
-          >
-            <ArrowLeft size={18} />
-          </button>
-          <button
-            onClick={goNext}
-            aria-label="Next project"
-            className="shrink-0 w-10 h-10 rounded-full border-1 border-white flex items-center justify-center hover:bg-white hover:text-black transition-colors"
-          >
-            <ArrowRight size={18} />
-          </button>
-        </div>
-      </div>
-    </div>
+      </section>
+    </>
+    
   );
 }
 

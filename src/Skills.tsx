@@ -34,54 +34,59 @@ function Skills() {
   const [selectedSkill, setSelectedSkill] = useState(skills[0]);
 
   return (
-    <div className="min-h-screen text-white flex items-center justify-center p-6 sm:p-10 border-t border-white/20">
-      <div className="w-full max-w-5xl grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-5 items-center">
-        {/* Left column: skill pills */}
-        <div className="flex flex-wrap gap-3 justify-center md:justify-start">
-          {skills.map((skill) => (
-            <button
-              key={skill.name}
-              onClick={() => setSelectedSkill(skill)}
-              className={`${skill.width} flex-grow-0 basis-[calc(50%-0.375rem)] sm:basis-[calc(33%-0.5rem)] md:basis-auto md:min-w-[6.5rem] text-center border rounded-md px-3 py-2 text-xs transition-colors ${
-                selectedSkill.name === skill.name
-                  ? 'border-white bg-white text-black'
-                  : 'border-white/50 hover:border-white'
-              }`}
-            >
-              {skill.name}
-            </button>
-          ))}
-        </div>
+    <>
+      <section id="skills">
+        <div className="min-h-screen text-white flex items-center justify-center p-6 sm:p-10 border-t border-white/20">
+          <div className="w-full max-w-5xl grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-5 items-center">
+            {/* Left column: skill pills */}
+            <div className="flex flex-wrap gap-3 justify-center md:justify-start">
+              {skills.map((skill) => (
+                <button
+                  key={skill.name}
+                  onClick={() => setSelectedSkill(skill)}
+                  className={`${skill.width} flex-grow-0 basis-[calc(50%-0.375rem)] sm:basis-[calc(33%-0.5rem)] md:basis-auto md:min-w-[6.5rem] text-center border rounded-md px-3 py-2 text-xs transition-colors ${
+                    selectedSkill.name === skill.name
+                      ? 'border-white bg-white text-black'
+                      : 'border-white/50 hover:border-white'
+                  }`}
+                >
+                  {skill.name}
+                </button>
+              ))}
+            </div>
 
-        {/* Right column: heading + image tied to the selected skill */}
-        {/* `relative` here creates the positioning context the absolute image anchors to */}
-        <div className="relative flex flex-col items-center md:items-start min-h-[220px] sm:min-h-[280px] md:min-h-[320px] mt-4 md:mt-0 mb-12 md:mb-24">
-          <h1
-            className="leading-none relative z-0 text-center md:text-left"
-            style={{
-              fontFamily: '"Archivo Black", sans-serif',
-              fontOpticalSizing: 'auto',
-              fontWeight: 900,
-              fontStyle: 'normal',
-              WebkitTextStroke: '0.5px white',
-              color: 'transparent',
-              fontSize: 'clamp(2.5rem, 6vw, 4.5rem)',
-            }}
-          >
-            SKILLS
-            <br />
-            AUQUIRED
-          </h1>
+            {/* Right column: heading + image tied to the selected skill */}
+            {/* `relative` here creates the positioning context the absolute image anchors to */}
+            <div className="relative flex flex-col items-center md:items-start min-h-[220px] sm:min-h-[280px] md:min-h-[320px] mt-4 md:mt-0 mb-12 md:mb-24">
+              <h1
+                className="leading-none relative z-0 text-center md:text-left"
+                style={{
+                  fontFamily: '"Archivo Black", sans-serif',
+                  fontOpticalSizing: 'auto',
+                  fontWeight: 900,
+                  fontStyle: 'normal',
+                  WebkitTextStroke: '0.5px white',
+                  color: 'transparent',
+                  fontSize: 'clamp(2.5rem, 6vw, 4.5rem)',
+                }}
+              >
+                SKILLS
+                <br />
+                AUQUIRED
+              </h1>
 
-          <img
-            key={selectedSkill.name}
-            src={selectedSkill.image}
-            alt={selectedSkill.name}
-            className="absolute top-20 sm:top-24 md:top-30 left-1/2 md:left-8 -translate-x-1/2 md:translate-x-0 z-10 w-40 h-40 sm:w-56 sm:h-56 md:w-80 md:h-80 object-contain drop-shadow-[0_0_20px_rgba(80,140,255,0.6)] animate-slide-fade-in-right"
-          />
+              <img
+                key={selectedSkill.name}
+                src={selectedSkill.image}
+                alt={selectedSkill.name}
+                className="absolute top-20 sm:top-24 md:top-30 left-1/2 md:left-8 -translate-x-1/2 md:translate-x-0 z-10 w-40 h-40 sm:w-56 sm:h-56 md:w-80 md:h-80 object-contain drop-shadow-[0_0_20px_rgba(80,140,255,0.6)] animate-slide-fade-in-right"
+              />
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
+      </section>
+    </>
+    
   );
 }
 
