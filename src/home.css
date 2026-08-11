@@ -68,7 +68,7 @@ font-size: clamp(2rem, 6vw, 5rem);
   font-optical-sizing: auto;
   font-weight: 900;
   font-style: normal;
-  -webkit-text-stroke: 0.5px white;
+  -webkit-text-stroke: 1px white;
   color: transparent;
   font-size: clamp(3rem, 10vw, 9rem);
   position: absolute;
@@ -81,6 +81,18 @@ font-size: clamp(2rem, 6vw, 5rem);
   align-items: center;
 }
 
+/* .D{
+  position: absolute;
+  top: 0.8em;           
+  left: 0;
+  z-index: 5;          
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30;
+  width: 30;
+} */
 
 .navbar {
     display: flex;

@@ -53,7 +53,11 @@ function About() {
               </p>
 
               <a href={cv} download="Gideon_Lenge_CV.pdf" className="self-center md:self-start">
-                <button className="mt-2 md:mt-4 border border-white/60 rounded-full px-6 py-2 text-sm font-medium hover:bg-white hover:text-black transition-colors">
+                <span className="relative flex size-3">
+                    <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-white opacity-75"></span>
+                    <span className="relative inline-flex size-3 rounded-full bg-sky-500"></span>
+                  </span>
+                <button className="mt-2 md:mt-4 border border-white/60 rounded-full px-6 py-2 text-sm font-medium hover:bg-white hover:text-black transition-colors ">
                   Download CV
                 </button>
               </a>
