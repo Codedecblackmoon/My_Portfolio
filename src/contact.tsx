@@ -1,39 +1,33 @@
-
 import React, { useState } from 'react';
-import emailjs from '@emailjs/browser';
-
 
 function Contact() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [massage, setMessage] = useState('');
+  const [status, setStatus] = useState<'idle' | 'sending' | 'success' | 'error'>('idle');
 
-  const handleFormSubmit = (e: React.FormEvent) => {
+  const handleFormSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    const serviceID = 'service_4b0mwhe'; 
-    const templateID = 'template_oxc16mb'; 
-    const userID = 'm_XcbcDfp4HlS5nKC';
+    setStatus('sending');
 
-    const templateParams = {
-      from_name: name,
-      from_email: email,
-      message: massage,
-      to_email: 'Gideon.L'
-    };
-
-    emailjs.send(serviceID, templateID, templateParams, userID)
-      .then((response) => {
-        alert('Message sent successfully!');
-        console.log('Email sent successfully:', response);
-        setName('');
-        setEmail('');
-        setMessage('');
-      })
-      .catch((error) => {
-        console.error('Failed to send message:', error);
-        alert('Failed to send the message. Please try again later.');
+    try {
+      const res = await fetch('/api/send', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name, email, message: massage }),
       });
-  }
+
+      if (!res.ok) throw new Error('Failed to send');
+
+      setStatus('success');
+      setName('');
+      setEmail('');
+      setMessage('');
+    } catch (err) {
+      console.error(err);
+      setStatus('error');
+    }
+  };
 
   return (
     <>
@@ -76,11 +70,6 @@ function Contact() {
                 className="w-full bg-transparent border border-white rounded-full px-4 py-2 text-sm placeholder-white/50 focus:outline-none focus:border-white"
               />
               <input
-                type="tel"
-                placeholder="Number"
-                className="w-full bg-transparent border border-white rounded-full px-4 py-2 text-sm placeholder-white/50 focus:outline-none focus:border-white"
-              />
-              <input
                 type="email"
                 placeholder="Email"
                 value={email}
@@ -99,10 +88,18 @@ function Contact() {
               />
               <button
                 type="submit"
-                className="self-center sm:self-start mt-2 border border-white/60 rounded-full px-6 py-2 text-sm font-medium hover:bg-white hover:text-black transition-colors"
+                disabled={status === 'sending'}
+                className="self-center sm:self-start mt-2 border border-white/60 rounded-full px-6 py-2 text-sm font-medium hover:bg-white hover:text-black transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                Send Message
+                {status === 'sending' ? 'Sending...' : 'Send Message'}
               </button>
+
+              {status === 'success' && (
+                <p className="text-sm text-green-400">Message sent! I'll get back to you soon.</p>
+              )}
+              {status === 'error' && (
+                <p className="text-sm text-red-400">Something went wrong. Please try again.</p>
+              )}
             </form>
           </div>
         </div>
