@@ -165,7 +165,7 @@ font-size: clamp(2rem, 6vw, 5rem);
 
   .hero-title {
     position: relative;
-    top: auto;
+    top: 160px;
     left: auto;
     transform: none;
     width: 100%;
