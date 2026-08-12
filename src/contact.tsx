@@ -34,28 +34,6 @@ function Contact() {
       <section id="contact">
         <div className="min-h-screen text-white flex items-center justify-center p-6 sm:p-10 border-t border-white/20">
           <div className="w-full max-w-4xl grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 items-center md:items-start">
-            {/* Right column on desktop, but shown first on mobile: heading */}
-            <div className="order-1 md:order-2">
-              <h1
-                className="text-center leading-none"
-                style={{
-                    fontFamily: '"Archivo Black", sans-serif',
-                    fontOpticalSizing: 'auto',
-                    fontWeight: 200,
-                    fontStyle: 'normal',
-                    WebkitTextStroke: '0.5px white',
-                    color: 'transparent',
-                    fontSize: 'clamp(2.25rem, 5.5vw, 6.5rem)',
-                    margin: '0px',
-                    padding: '0',
-                }}
-              >
-                CONTACT
-                <br />
-                ME
-              </h1>
-            </div>
-
             {/* Form card */}
             <form
               onSubmit={handleFormSubmit}
@@ -101,6 +79,28 @@ function Contact() {
                 <p className="text-sm text-red-400">Something went wrong. Please try again.</p>
               )}
             </form>
+
+            <div className="order-1 md:order-2">
+              <h1
+                className="text-center leading-none"
+                style={{
+                    fontFamily: '"Archivo Black", sans-serif',
+                    fontOpticalSizing: 'auto',
+                    fontWeight: 200,
+                    fontStyle: 'normal',
+                    WebkitTextStroke: '0.5px white',
+                    color: 'transparent',
+                    fontSize: 'clamp(2.25rem, 5.5vw, 6.5rem)',
+                    margin: '0px',
+                    padding: '0',
+                }}
+              >
+                CONTACT
+                <br />
+                ME
+              </h1>
+            </div>
+
           </div>
         </div>
       </section>
