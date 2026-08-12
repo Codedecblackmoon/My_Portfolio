@@ -6,25 +6,29 @@ import Projects from './projects'
 import Contact from './contact'
 import Footer from './footer'
 import ScrollReveal from './ScrollReveal'
+import { CustomCursor } from '@/components/ui/custom-cursor';
 
 function App() {
   return (
     <>
-      <Navbar />
-      <Home />
-      <ScrollReveal>
-        <About />
-      </ScrollReveal>
-      <ScrollReveal>
-        <Skills />
-      </ScrollReveal>
-      <ScrollReveal>
-        <Projects />
-      </ScrollReveal>
-      <ScrollReveal>
-        <Contact />
-      </ScrollReveal>
-      <Footer />
+      <CustomCursor color="#ffffff">
+          <Navbar />
+        <Home />
+        <ScrollReveal>
+          <About />
+        </ScrollReveal>
+        <ScrollReveal>
+          <Projects />
+        </ScrollReveal>
+        <ScrollReveal>
+          <Skills />
+        </ScrollReveal>
+        <ScrollReveal>
+          <Contact />
+        </ScrollReveal>
+        <Footer />
+      </CustomCursor>
+      
     </>
   )
 }
