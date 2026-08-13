@@ -1,5 +1,7 @@
 import React from 'react';
-import image from './assets/python.png'
+import image from './assets/cup.png'
+import image2 from './assets/suzan.png'
+import image3 from './assets/GD.png'
 import bl from './assets/blank.png'
 
 function AKF() {
@@ -43,7 +45,7 @@ function AKF() {
                             sm:max-w-[260px]
                             md:max-w-[280px]
                             "
-                            src={image}
+                            src={image3}
                             alt="Graphic Designer"
                         />
 
@@ -111,7 +113,7 @@ function AKF() {
                     href="#"
                     className="mt-3 block text-center text-base font-medium sm:text-lg"
                     >
-                    Graphic Designer
+                    Product Design
                     </a>
                 </div>
                 <div className="group w-30% overflow-visible rounded-3xl border border-white p-4 sm:p-5">
@@ -131,7 +133,7 @@ function AKF() {
                             sm:max-w-[260px]
                             md:max-w-[280px]
                             "
-                            src={image}
+                            src={image2}
                             alt="Graphic Designer"
                         />
 
@@ -152,10 +154,10 @@ function AKF() {
                         </div>
 
                     <a
-                    href="#"
+                    href=""
                     className="mt-3 block text-center text-base font-medium sm:text-lg"
                     >
-                    Graphic Designer
+                    3D Modeling
                     </a>
                 </div>
             </div>
