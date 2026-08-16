@@ -118,7 +118,6 @@ function Project() {
               </div>
             </div>
 
-            {/* Right arrow - desktop only, flanks content */}
             <button
               onClick={goNext}
               aria-label="Next project"
@@ -126,8 +125,6 @@ function Project() {
             >
               <ArrowRight size={18} />
             </button>
-
-            {/* Prev/Next row - mobile only, below content */}
             <div className="flex md:hidden items-center justify-center gap-6 mt-2">
               <button
                 onClick={goPrev}

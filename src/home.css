@@ -81,19 +81,6 @@ font-size: clamp(2rem, 6vw, 5rem);
   align-items: center;
 }
 
-/* .D{
-  position: absolute;
-  top: 0.8em;           
-  left: 0;
-  z-index: 5;          
-  
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 30;
-  width: 30;
-} */
-
 .navbar {
     display: flex;
     justify-content: center;
