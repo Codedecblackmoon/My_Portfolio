@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import image from './assets/send.png'
+
 
 function Contact() {
   const [name, setName] = useState('');
@@ -37,7 +39,7 @@ function Contact() {
             {/* Form card */}
             <form
               onSubmit={handleFormSubmit}
-              className="order-2 md:order-1 w-full border border-white rounded-3xl p-4 sm:p-5 flex flex-col gap-4"
+              className="order-2 md:order-2 w-full border border-white rounded-3xl p-4 sm:p-5 flex flex-col gap-4"
             >
               <input
                 type="text"
@@ -80,7 +82,7 @@ function Contact() {
               )}
             </form>
 
-            <div className="order-1 md:order-2">
+            <div className="order-1 md:order-1 mb-30 md:mb-120">
               <h1
                 className="text-center leading-none"
                 style={{
@@ -99,6 +101,11 @@ function Contact() {
                 <br />
                 ME
               </h1>
+              <img
+                src={image}
+                alt="send"
+                className="absolute top-20 sm:top-5 md:top-30 left-1/2 md:left-60 -translate-x-1/2 md:translate-x-0 z-10 w-40 h-40 sm:w-56 sm:h-56 md:w-80 md:h-80 object-contain drop-shadow-[0_0_20px_rgba(80,140,255,0.6)] animate-slide-fade-in-right"
+              />
             </div>
 
           </div>
