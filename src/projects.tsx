@@ -1,6 +1,7 @@
 
 import { useState } from 'react';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
+import r from './assets/r.png'
 
 function Project() {
   const projects = [
@@ -19,14 +20,26 @@ function Project() {
     {
       name: 'ACB online store',
       description:
-        'All Christian" embodies unity, faith, and compassion. This                          brand represents a community that shares Christian values, promoting love, kindness, and acceptance. It symbolizes a collective identity for Christians worldwide, fostering a sense of belonging and spiritual connection.',
+        'All Christian" embodies unity, faith, and compassion. This brand represents a community that shares Christian values, promoting love, kindness, and acceptance. It symbolizes a collective identity for Christians worldwide, fostering a sense of belonging and spiritual connection.',
       story: [
         '',
       ],
       Skills: "HTML, CSS, JavaScript, Paysharp AIP",
       image: 'https://github.com/user-attachments/assets/a2e80e54-2894-42e1-956e-0201d2169b52',
       github: 'https://github.com/Codedecblackmoon/All_Christian_Brand',
-      live: 'hhttps://codedecblackmoon.github.io/All_Christian_Brand/',
+      live: 'https://codedecblackmoon.github.io/All_Christian_Brand/',
+    },
+    {
+      name: 'Reubray Insurance & Financial Services Website',
+      description:
+        'Designed and developed a modern, responsive website for Reubray, a South African financial and insurance services provider, focused on building trust, educating customers, and generating qualified enquiries. The site features tailored journeys for individuals, SMEs, and corporate clients, with quote requests, advice forms, claims information, compliance resources, FAQs, and financial education. Built with React, TypeScript, and Tailwind CSS, with Base44 AI used as a development and design support tool.',
+      story: [
+        '',
+      ],
+      Skills: "React, Tailwind CSS, JavaScript, Bass 44",
+      image: 'https://github.com/user-attachments/assets/07af1870-8a4d-4284-8f4a-2f1a08f2cf25',
+      github: '',
+      live: 'https://reubray-curated-finance.base44.app/',
     },
   ];
 

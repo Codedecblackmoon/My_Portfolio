@@ -11,7 +11,7 @@ function About() {
             {/* Left column: heading + image */}
             <div className="flex flex-col items-center md:items-start">
               <h1
-                className="leading-none mb-6 md:mb-8 text-center md:text-left"
+                className="leading-none  text-center md:text-left"
                 style={{
                     fontFamily: '"Archivo Black", sans-serif',
                     fontOpticalSizing: 'auto',
@@ -29,8 +29,7 @@ function About() {
 
               <div className="relative rounded-2xl aspect-[4/3] w-full max-w-xs sm:max-w-80 flex items-center justify-center">
                 <img
-                  // className="absolute top-40 left-40 z-10 w-90 h-90 object-contain animate-slide-fade-in-right"
-                  className=" z-10 w-90 h-90 max-w-[220px] sm:max-w-[280px] md:max-w-xs object-contain animate-slide-fade-in-right"
+                  className="top-100 z-10 w-90 h-90 max-w-[220px] sm:max-w-[280px] md:max-w-xs object-contain animate-slide-fade-in-right"
                   src={image}
                   alt="Gideon Lenge"
                 />
@@ -38,16 +37,35 @@ function About() {
             </div>
 
             {/* Right column: text + button */}
-            <div className="flex flex-col gap-4 items-center md:items-start text-center md:text-left">
-              <p className="text-sm leading-relaxed">
-                I'm a dedicated and detail-oriented software developer with a creative 
+            <div className="flex flex-col gap-4 items-center md:items-start text-center md:text-left bg-#f2ebebff">
+              {/* <div className="text-sm leading-relaxed bg-#f9f6f6ff">
+
+              </div> */}
+              <p className="text-sm leading-relaxed "
+              style={{
+                fontFamily: '"JetBrains Mono", monospace',
+                fontOpticalSizing: 'auto',
+                fontWeight: 200,
+                fontStyle: 'normal',
+                color: '#2fed00fd',
+                }}
+              >
+                <span style={{ color: '#cc0abcfd' }}>&gt;$:</span> I'm a dedicated and detail-oriented software developer with a creative 
                 approach to problem-solving, always seeking new and visually appealing 
                 ways to address technical challenges. With a foundation in both front-end 
                 and back-end development, particularly in JavaScript and Python, I enjoy 
                 crafting efficient, scalable applications that prioritize user experience.
               </p>
 
-              <p className="text-sm leading-relaxed">
+              <p className="text-sm leading-relaxed"
+              style={{
+                fontFamily: '"JetBrains Mono", monospace',
+                fontOpticalSizing: 'auto',
+                fontWeight: 200,
+                fontStyle: 'normal',
+                color: '#2fed00fd',
+                }}
+              >
                 Known for my creativity, I thrive in collaborative environments where I 
                 can contribute unique solutions that enhance functionality and design.
               </p>
