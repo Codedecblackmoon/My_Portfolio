@@ -14,7 +14,7 @@ function Project() {
       Skills: "React (Vite), React Router, Node.js, Express, Supabase (Postgres), Resend, QR Server API, SweetAlert2",
       image: 'https://github.com/user-attachments/assets/555d4ccb-ec31-46cc-abf2-a303a8d7a182',
       github: 'https://github.com/Codedecblackmoon/queueless',
-      live: 'https://queueless-hazel.vercel.app/login',
+      live: 'https://queueless-hazel.vercel.app/',
     },
     {
       name: 'ACB online store',
