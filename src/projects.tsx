@@ -37,7 +37,7 @@ function Project() {
       ],
       Skills: "React, Tailwind CSS, JavaScript, Bass 44",
       image: 'https://github.com/user-attachments/assets/157b1a06-c4b8-45cd-a0db-4b714db626eb',
-      github: '',
+      github: 'https://github.com/Codedecblackmoon/Reubray',
       live: 'https://reubray-curated-finance.base44.app/',
     },
   ];
