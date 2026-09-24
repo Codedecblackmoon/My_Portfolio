@@ -83,7 +83,7 @@ function Project() {
                 </h1>
 
                 <h2 className="text-2xl text-center md:text-left font-black tracking-tight mb-4">
-                  {project.name}
+                  {project.name}<i className="fa-brands fa-react ml-2 color-[#2200ff]"></i>
                 </h2>
 
                 <p className="text-sm text-center md:text-left leading-relaxed mb-4">
